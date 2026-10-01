@@ -1,6 +1,6 @@
-🏗️ SSA PROJECTS PVT. LTD.
+# 🏗️ SSA PROJECTS PVT. LTD.
 
-Construction • Infrastructure • Engineering • Development
+### Construction • Infrastructure • Engineering • Development
 
 <p align="center">
   <img src="logo.jpeg" alt="SSA Projects Pvt. Ltd." width="110">
@@ -31,62 +31,58 @@ Construction • Infrastructure • Engineering • Development
 
 </p>
 
-🌐 Live Website
+---
 
-SSA Projects Pvt. Ltd. — Official Website
+## 🌐 Live Website
 
-Visit Website →
+> **SSA Projects Pvt. Ltd. — Official Website**
 
-✨ Overview
+### [Visit Website →](https://miles-morales-rgb.github.io/ssa-projects/)
 
-SSA Projects Pvt. Ltd. is a modern static corporate website designed to showcase the company's expertise, projects, team and business capabilities.
+---
+
+## ✨ Overview
+
+**SSA Projects Pvt. Ltd.** is a modern static corporate website designed to showcase the company's expertise, projects, team and business capabilities.
 
 The website focuses on:
 
-🏗️ Construction
-
-🏢 Infrastructure
-
-⚙️ Engineering
-
-🏨 Luxury Hospitality
-
-📐 Project Management
-
-🌐 Development Projects
-
-📊 Corporate Portfolio
+- 🏗️ Construction
+- 🏢 Infrastructure
+- ⚙️ Engineering
+- 🏨 Luxury Hospitality
+- 📐 Project Management
+- 🌐 Development Projects
+- 📊 Corporate Portfolio
 
 The frontend is completely static and optimized for fast loading, responsive layouts and easy content management.
 
-🚀 Features
+---
 
-🎨 Modern UI
+# 🚀 Features
 
-Premium dark corporate design
+### 🎨 Modern UI
 
-Responsive layout
+- Premium dark corporate design
+- Responsive layout
+- Smooth animations
+- Interactive project cards
+- Modern navigation
+- Mobile-friendly interface
+- Glass-style UI elements
+- Corporate gold accent design
 
-Smooth animations
-
-Interactive project cards
-
-Modern navigation
-
-Mobile-friendly interface
-
-Glass-style UI elements
-
-Corporate gold accent design
-
-📁 Dynamic Projects
+### 📁 Dynamic Projects
 
 Project information is loaded from:
 
+```text
 projects.json
+```
 
 Projects can contain:
 
+```json
 {
   "title": "Project Name",
   "category": "Hospitality",
@@ -97,17 +93,23 @@ Projects can contain:
   "featured": true,
   "displayOrder": 1
 }
+```
 
 The website automatically reads the JSON data and generates the project cards.
 
-👥 Team Management
+---
+
+# 👥 Team Management
 
 Team information is loaded dynamically from:
 
+```text
 team.json
+```
 
 Example:
 
+```json
 {
   "name": "Team Member",
   "role": "Project Director",
@@ -115,86 +117,94 @@ Example:
   "quote": "Building excellence through execution.",
   "displayOrder": 1
 }
+```
 
 Team members are automatically sorted using:
 
+```text
 displayOrder
+```
 
-⚡ Performance
+---
+
+# ⚡ Performance
 
 Performance is an important part of the website architecture.
 
-Initial Rendering
+### Initial Rendering
 
 The website first loads:
 
+```text
 HTML
  ↓
 CSS
  ↓
 Main UI
+```
 
 Project and team data are then requested asynchronously:
 
+```text
              ┌── projects.json
 Website ─────┤
              └── team.json
+```
 
 Both JSON files are fetched in parallel.
 
-Image Optimization
+### Image Optimization
 
 Project and team images use:
 
+```html
 loading="lazy"
 decoding="async"
+```
 
 This prevents unnecessary images from blocking the initial page load.
 
-Hero Video
+### Hero Video
 
 The large hero video is intentionally delayed so that the main website content can render first.
 
-🔍 SEO
+---
+
+# 🔍 SEO
 
 The website includes several SEO features:
 
-SEO-friendly <title>
+- SEO-friendly `<title>`
+- Meta description
+- Canonical URL
+- Search engine indexing directives
+- Google Search Console verification
+- Open Graph metadata
+- Twitter/X metadata
+- Organization structured data
+- Website structured data
+- Semantic HTML
+- Image ALT attributes
+- `robots.txt`
+- `sitemap.xml`
 
-Meta description
+### Sitemap
 
-Canonical URL
-
-Search engine indexing directives
-
-Google Search Console verification
-
-Open Graph metadata
-
-Twitter/X metadata
-
-Organization structured data
-
-Website structured data
-
-Semantic HTML
-
-Image ALT attributes
-
-robots.txt
-
-sitemap.xml
-
-Sitemap
-
+```text
 https://miles-morales-rgb.github.io/ssa-projects/sitemap.xml
+```
 
-Robots
+### Robots
 
+```text
 https://miles-morales-rgb.github.io/ssa-projects/robots.txt
+```
 
-📂 Project Structure
+---
 
+# 📂 Project Structure
+
+```text
 ssa-projects/
 │
 ├── index.html
@@ -224,95 +234,126 @@ ssa-projects/
 ├── server.js
 │
 └── README.md
+```
 
-🖼️ Image Management
+---
 
-Project Images
+# 🖼️ Image Management
+
+### Project Images
 
 Store project images inside:
 
+```text
 images/projects/
+```
 
 Example:
 
+```text
 images/projects/jw-marriott.jpg
+```
 
-Then reference the image in projects.json:
+Then reference the image in `projects.json`:
 
+```json
 "imageUrl": "images/projects/jw-marriott.jpg"
+```
 
-Team Images
+### Team Images
 
 Store team images inside:
 
+```text
 images/team/
+```
 
 Example:
 
+```text
 images/team/director.jpg
+```
 
 Then reference:
 
+```json
 "imageUrl": "images/team/director.jpg"
+```
 
-🛠️ Local Development
+---
+
+# 🛠️ Local Development
 
 You can run the website locally before publishing it.
 
-Requirements
+### Requirements
 
-Node.js
+- Node.js
+- Modern web browser
 
-Modern web browser
-
-Start Server
+### Start Server
 
 Open a terminal inside the project folder:
 
+```bash
 node server.js
+```
 
 The website will be available at:
 
+```text
 http://localhost:8000
+```
 
-☁️ Deployment
+---
 
-The website is designed for GitHub Pages.
+# ☁️ Deployment
 
-Step 1 — Upload
+The website is designed for **GitHub Pages**.
+
+### Step 1 — Upload
 
 Upload the website files to your GitHub repository.
 
-Step 2 — Enable GitHub Pages
+### Step 2 — Enable GitHub Pages
 
 Go to:
 
+```text
 Repository
 → Settings
 → Pages
+```
 
 Select your deployment branch and folder.
 
-Step 3 — Publish
+### Step 3 — Publish
 
 GitHub Pages will automatically deploy the website.
 
 Live website:
 
+```text
 https://miles-morales-rgb.github.io/ssa-projects/
+```
 
-🔄 Updating Content
+---
+
+# 🔄 Updating Content
 
 The website content can be updated without modifying the main HTML layout.
 
-Add a Project
+## Add a Project
 
 Open:
 
+```text
 projects.json
+```
 
 Add:
 
+```json
 {
   "title": "New Project",
   "category": "Commercial",
@@ -323,19 +364,25 @@ Add:
   "featured": true,
   "displayOrder": 5
 }
+```
 
 Commit the changes.
 
 The website will automatically load the updated project data.
 
-Add a Team Member
+---
+
+## Add a Team Member
 
 Open:
 
+```text
 team.json
+```
 
 Add:
 
+```json
 {
   "name": "John Doe",
   "role": "Project Director",
@@ -343,17 +390,21 @@ Add:
   "quote": "Building excellence through execution.",
   "displayOrder": 5
 }
+```
 
 Commit the changes and GitHub Pages will publish the update.
 
-🔐 Security
+---
 
-This website is a public static frontend.
+# 🔐 Security
+
+This website is a **public static frontend**.
 
 Never store sensitive credentials in the repository.
 
-❌ Never commit:
+### ❌ Never commit:
 
+```text
 Passwords
 GitHub Personal Access Tokens
 API Keys
@@ -361,58 +412,58 @@ Private Keys
 Authentication Tokens
 Database Credentials
 Private Credentials
+```
 
 Anything published through GitHub Pages should be treated as publicly accessible.
 
-📱 Responsive Design
+---
+
+# 📱 Responsive Design
 
 The website is designed for:
 
-Device
+| Device | Support |
+|---|---|
+| 🖥️ Desktop | ✅ |
+| 💻 Laptop | ✅ |
+| 📱 Mobile | ✅ |
+| 📲 Tablet | ✅ |
 
-Support
+---
 
-🖥️ Desktop
-
-✅
-
-💻 Laptop
-
-✅
-
-📱 Mobile
-
-✅
-
-📲 Tablet
-
-✅
-
-📬 Contact
+# 📬 Contact
 
 For business inquiries:
 
+```text
 info@ssaprojects.com
+```
 
 The website provides a contact interface that can create an email inquiry through the visitor's email client.
 
-🏢 Company
+---
 
-SSA Projects Pvt. Ltd.
+# 🏢 Company
 
-Construction • Infrastructure • Engineering • Development
+## SSA Projects Pvt. Ltd.
 
-📜 License
+**Construction • Infrastructure • Engineering • Development**
+
+---
+
+# 📜 License
 
 This website and its associated content are proprietary to:
 
-SSA Projects Pvt. Ltd.
+**SSA Projects Pvt. Ltd.**
 
 The website design, branding, images, project information, source code and other proprietary content may not be reproduced, redistributed or used without appropriate authorization.
 
+---
+
 <p align="center">
 
-Built for SSA Projects Pvt. Ltd.
+### Built for SSA Projects Pvt. Ltd.
 
 <strong>Engineering Excellence. Built to Perform.</strong>
 
