@@ -574,13 +574,13 @@
         }
 
         .beyond-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
+            width: 50%;
+            height: 100%;
+            border-radius: 10%;
             margin-bottom: 20px;
-            border: 3px solid var(--accent-gold);
+            border: 2px solid #ede5e5;
             box-shadow: var(--glow-shadow);
-            overflow: hidden
+            overflow: hidden;
         }
 
         .beyond-avatar img {
@@ -1344,28 +1344,6 @@
         .work-card:hover::after,
         .highlight-card:hover::after,
         .beyond-card:hover::after {
-            opacity: 1;
-        }
-
-        .work-img::after {
-            content: "VIEW PROJECT  ↗";
-            position: absolute;
-            right: 16px;
-            bottom: 16px;
-            padding: 8px 11px;
-            font-size: 9px;
-            letter-spacing: .16em;
-            color: #fff;
-            border: 1px solid rgba(255, 255, 255, .18);
-            background: rgba(11, 15, 23, .62);
-            backdrop-filter: blur(10px);
-            transform: translateY(10px);
-            opacity: 0;
-            transition: .35s ease;
-        }
-
-        .work-card:hover .work-img::after {
-            transform: translateY(0);
             opacity: 1;
         }
 
