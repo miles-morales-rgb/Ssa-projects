@@ -1,92 +1,425 @@
-# SSA PROJECTS — COMPLETE FRONTEND + ADMIN
+🏗️ SSA PROJECTS PVT. LTD.
 
-This package contains the complete static setup.
+Construction • Infrastructure • Engineering • Development
 
-## 1. Public website repository
+<p align="center">
+  <img src="logo.jpeg" alt="SSA Projects Pvt. Ltd." width="110">
+</p>
 
-Upload everything inside `public/` to your PUBLIC website repository:
+<p align="center">
+  <strong>Engineering Excellence. Built to Perform.</strong>
+</p>
 
-public/
-  index.html
-  projects.json
-  team.json
-  server.js
+<p align="center">
+  A modern, responsive and performance-focused corporate website
+  for <strong>SSA Projects Pvt. Ltd.</strong>
+</p>
 
-The public `index.html` is configured to fetch the central JSON data from the separate SSA-ADMIN repository.
+<p align="center">
 
-Before publishing, replace YOUR-USERNAME in `public/index.html` with your real GitHub username.
+  <a href="https://miles-morales-rgb.github.io/ssa-projects/">
+    <img src="https://img.shields.io/badge/Live%20Website-Visit%20Site-d4af37?style=for-the-badge" alt="Live Website">
+  </a>
 
-## 2. SSA-ADMIN repository
+  <img src="https://img.shields.io/badge/HTML5-Static%20Website-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
 
-Upload everything inside `ssa-admin/` to a separate GitHub repository named `SSA-ADMIN`:
+  <img src="https://img.shields.io/badge/CSS3-Responsive-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 
-ssa-admin/
-  index.html
-  projects.json
-  team.json
-  images/
-    projects/
-    team/
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 
-Put actual project images inside:
+  <img src="https://img.shields.io/badge/GitHub%20Pages-Deployed-222222?style=for-the-badge&logo=github" alt="GitHub Pages">
+
+</p>
+
+🌐 Live Website
+
+SSA Projects Pvt. Ltd. — Official Website
+
+Visit Website →
+
+✨ Overview
+
+SSA Projects Pvt. Ltd. is a modern static corporate website designed to showcase the company's expertise, projects, team and business capabilities.
+
+The website focuses on:
+
+🏗️ Construction
+
+🏢 Infrastructure
+
+⚙️ Engineering
+
+🏨 Luxury Hospitality
+
+📐 Project Management
+
+🌐 Development Projects
+
+📊 Corporate Portfolio
+
+The frontend is completely static and optimized for fast loading, responsive layouts and easy content management.
+
+🚀 Features
+
+🎨 Modern UI
+
+Premium dark corporate design
+
+Responsive layout
+
+Smooth animations
+
+Interactive project cards
+
+Modern navigation
+
+Mobile-friendly interface
+
+Glass-style UI elements
+
+Corporate gold accent design
+
+📁 Dynamic Projects
+
+Project information is loaded from:
+
+projects.json
+
+Projects can contain:
+
+{
+  "title": "Project Name",
+  "category": "Hospitality",
+  "location": "India",
+  "shortDescription": "Short project description.",
+  "description": "Detailed project description.",
+  "imageUrl": "images/projects/project.jpg",
+  "featured": true,
+  "displayOrder": 1
+}
+
+The website automatically reads the JSON data and generates the project cards.
+
+👥 Team Management
+
+Team information is loaded dynamically from:
+
+team.json
+
+Example:
+
+{
+  "name": "Team Member",
+  "role": "Project Director",
+  "imageUrl": "images/team/member.jpg",
+  "quote": "Building excellence through execution.",
+  "displayOrder": 1
+}
+
+Team members are automatically sorted using:
+
+displayOrder
+
+⚡ Performance
+
+Performance is an important part of the website architecture.
+
+Initial Rendering
+
+The website first loads:
+
+HTML
+ ↓
+CSS
+ ↓
+Main UI
+
+Project and team data are then requested asynchronously:
+
+             ┌── projects.json
+Website ─────┤
+             └── team.json
+
+Both JSON files are fetched in parallel.
+
+Image Optimization
+
+Project and team images use:
+
+loading="lazy"
+decoding="async"
+
+This prevents unnecessary images from blocking the initial page load.
+
+Hero Video
+
+The large hero video is intentionally delayed so that the main website content can render first.
+
+🔍 SEO
+
+The website includes several SEO features:
+
+SEO-friendly <title>
+
+Meta description
+
+Canonical URL
+
+Search engine indexing directives
+
+Google Search Console verification
+
+Open Graph metadata
+
+Twitter/X metadata
+
+Organization structured data
+
+Website structured data
+
+Semantic HTML
+
+Image ALT attributes
+
+robots.txt
+
+sitemap.xml
+
+Sitemap
+
+https://miles-morales-rgb.github.io/ssa-projects/sitemap.xml
+
+Robots
+
+https://miles-morales-rgb.github.io/ssa-projects/robots.txt
+
+📂 Project Structure
+
+ssa-projects/
+│
+├── index.html
+│
+├── projects.json
+├── team.json
+│
+├── logo.jpeg
+├── video.mp4
+├── hero-poster.jpg
+│
+├── images/
+│   │
+│   ├── projects/
+│   │   ├── project-01.jpg
+│   │   ├── project-02.jpg
+│   │   └── ...
+│   │
+│   └── team/
+│       ├── member-01.jpg
+│       ├── member-02.jpg
+│       └── ...
+│
+├── robots.txt
+├── sitemap.xml
+│
+├── server.js
+│
+└── README.md
+
+🖼️ Image Management
+
+Project Images
+
+Store project images inside:
+
 images/projects/
 
-Put actual team member images inside:
+Example:
+
+images/projects/jw-marriott.jpg
+
+Then reference the image in projects.json:
+
+"imageUrl": "images/projects/jw-marriott.jpg"
+
+Team Images
+
+Store team images inside:
+
 images/team/
 
-The JSON image paths should match those locations.
+Example:
 
-## 3. Projects JSON
+images/team/director.jpg
 
-Each project has:
-title
-category
-location
-shortDescription
-description
-imageUrl
-featured
-displayOrder
+Then reference:
 
-## 4. Team JSON
+"imageUrl": "images/team/director.jpg"
 
-Each team member has:
-name
-role
-imageUrl
-quote
-displayOrder
+🛠️ Local Development
 
-## 5. Admin functions
+You can run the website locally before publishing it.
 
-The admin can:
-- Fetch projects from GitHub
-- Fetch team members from GitHub
-- Add project request
-- Remove project request
-- Add team member request
-- Remove team member request
-- Open a Gmail/mail client with structured request details
+Requirements
 
-The admin does not directly write to GitHub. This is intentional: a GitHub write token must never be exposed in browser JavaScript.
+Node.js
 
-## 6. Performance
+Modern web browser
 
-The public page:
-- Renders the main HTML/CSS first.
-- Fetches projects.json and team.json asynchronously.
-- Fetches both JSON files in parallel.
-- Lazy-loads project/team images.
-- Delays the heavy hero video until after initial rendering.
+Start Server
 
-## 7. Local preview
-
-In the public folder:
+Open a terminal inside the project folder:
 
 node server.js
 
-Then open:
+The website will be available at:
 
 http://localhost:8000
 
-Do not put passwords, GitHub tokens, API keys, or private credentials in the frontend or JSON files.
+☁️ Deployment
+
+The website is designed for GitHub Pages.
+
+Step 1 — Upload
+
+Upload the website files to your GitHub repository.
+
+Step 2 — Enable GitHub Pages
+
+Go to:
+
+Repository
+→ Settings
+→ Pages
+
+Select your deployment branch and folder.
+
+Step 3 — Publish
+
+GitHub Pages will automatically deploy the website.
+
+Live website:
+
+https://miles-morales-rgb.github.io/ssa-projects/
+
+🔄 Updating Content
+
+The website content can be updated without modifying the main HTML layout.
+
+Add a Project
+
+Open:
+
+projects.json
+
+Add:
+
+{
+  "title": "New Project",
+  "category": "Commercial",
+  "location": "India",
+  "shortDescription": "Project overview.",
+  "description": "Detailed project information.",
+  "imageUrl": "images/projects/new-project.jpg",
+  "featured": true,
+  "displayOrder": 5
+}
+
+Commit the changes.
+
+The website will automatically load the updated project data.
+
+Add a Team Member
+
+Open:
+
+team.json
+
+Add:
+
+{
+  "name": "John Doe",
+  "role": "Project Director",
+  "imageUrl": "images/team/john-doe.jpg",
+  "quote": "Building excellence through execution.",
+  "displayOrder": 5
+}
+
+Commit the changes and GitHub Pages will publish the update.
+
+🔐 Security
+
+This website is a public static frontend.
+
+Never store sensitive credentials in the repository.
+
+❌ Never commit:
+
+Passwords
+GitHub Personal Access Tokens
+API Keys
+Private Keys
+Authentication Tokens
+Database Credentials
+Private Credentials
+
+Anything published through GitHub Pages should be treated as publicly accessible.
+
+📱 Responsive Design
+
+The website is designed for:
+
+Device
+
+Support
+
+🖥️ Desktop
+
+✅
+
+💻 Laptop
+
+✅
+
+📱 Mobile
+
+✅
+
+📲 Tablet
+
+✅
+
+📬 Contact
+
+For business inquiries:
+
+info@ssaprojects.com
+
+The website provides a contact interface that can create an email inquiry through the visitor's email client.
+
+🏢 Company
+
+SSA Projects Pvt. Ltd.
+
+Construction • Infrastructure • Engineering • Development
+
+📜 License
+
+This website and its associated content are proprietary to:
+
+SSA Projects Pvt. Ltd.
+
+The website design, branding, images, project information, source code and other proprietary content may not be reproduced, redistributed or used without appropriate authorization.
+
+<p align="center">
+
+Built for SSA Projects Pvt. Ltd.
+
+<strong>Engineering Excellence. Built to Perform.</strong>
+
+<br><br>
+
+<a href="https://miles-morales-rgb.github.io/ssa-projects/">
+  Visit Official Website →
+</a>
+
+</p>
