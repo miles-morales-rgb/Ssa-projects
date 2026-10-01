@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SSA PROJECTS PVT. LTD.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
 
-        /* --- CSS STYLES --- */
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSA PROJECTS PVT. LTD.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
         :root {
             --primary-bg: #0b0f17;
             --surface-bg: #131b27;
@@ -18,36 +18,35 @@
             --accent-gold-hover: #b89528;
             --text-main: #f1f5f9;
             --text-muted: #94a3b8;
-            --border-color: rgba(255, 255, 255, 0.08);
-            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-            --glow-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+            --border-color: rgba(255, 255, 255, .08);
+            --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, .5);
+            --glow-shadow: 0 0 20px rgba(212, 175, 55, .15)
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif
         }
 
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth
         }
 
         body {
             color: var(--text-main);
-            background-color: var(--primary-bg);
+            background: var(--primary-bg);
             line-height: 1.6;
-            overflow-x: hidden;
+            overflow-x: hidden
         }
 
-        /* Modern Glass Header */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background: rgba(11, 15, 23, 0.85);
+            background: rgba(11, 15, 23, .85);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             display: flex;
@@ -55,13 +54,13 @@
             align-items: center;
             padding: 1.2rem 8%;
             z-index: 1000;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color)
         }
 
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 12px
         }
 
         .logo-placeholder {
@@ -75,27 +74,27 @@
             background: var(--surface-card);
             border: 1px solid var(--border-color);
             box-shadow: var(--glow-shadow);
-            flex-shrink: 0;
+            flex-shrink: 0
         }
 
         .logo-placeholder img {
             width: 100%;
             height: 100%;
             object-fit: contain;
-            display: block;
+            display: block
         }
 
         .company-name {
             color: var(--text-main);
             font-size: 1.15rem;
             font-weight: 700;
-            letter-spacing: 0.5px;
+            letter-spacing: .5px
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 12px;
+            gap: 12px
         }
 
         nav a {
@@ -104,31 +103,30 @@
             font-weight: 500;
             padding: 8px 18px;
             border-radius: 20px;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-            border: 1px solid transparent;
+            transition: all .3s ease;
+            font-size: .9rem;
+            border: 1px solid transparent
         }
 
-        nav a:hover, nav a.active {
+        nav a:hover,
+        nav a.active {
             color: var(--accent-gold);
-            background: rgba(212, 175, 55, 0.08);
-            border-color: rgba(212, 175, 55, 0.2);
+            background: rgba(212, 175, 55, .08);
+            border-color: rgba(212, 175, 55, .2)
         }
 
-        /* Mobile Menu Button */
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
             color: var(--text-main);
             font-size: 1.5rem;
-            cursor: pointer;
+            cursor: pointer
         }
 
-        /* Section Global Styling */
         section {
-            padding: 120px 8% 80px 8%;
-            min-height: 80vh;
+            padding: 120px 8% 80px;
+            min-height: 80vh
         }
 
         .section-title {
@@ -138,7 +136,7 @@
             margin-bottom: 50px;
             position: relative;
             color: var(--text-main);
-            letter-spacing: -0.5px;
+            letter-spacing: -.5px
         }
 
         .section-title::after {
@@ -150,24 +148,22 @@
             bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
-            border-radius: 2px;
+            border-radius: 2px
         }
 
-        /* Scroll Animations */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+            transition: all .8s cubic-bezier(.16, 1, .3, 1)
         }
 
         .reveal.active {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0)
         }
 
-        /* Hero Section with Video Background */
         #home {
-            padding: 0;
+            padding: 0
         }
 
         .hero {
@@ -179,7 +175,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 120px 20px 60px 20px;
+            padding: 120px 20px 60px
         }
 
         .hero-video {
@@ -192,14 +188,14 @@
             height: auto;
             z-index: -2;
             transform: translate(-50%, -50%);
-            object-fit: cover;
+            object-fit: cover
         }
 
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgba(11, 15, 23, 0.6) 0%, rgba(11, 15, 23, 0.95) 100%);
-            z-index: -1;
+            background: linear-gradient(180deg, rgba(11, 15, 23, .6) 0%, rgba(11, 15, 23, .95) 100%);
+            z-index: -1
         }
 
         .hero h1 {
@@ -208,9 +204,9 @@
             line-height: 1.15;
             max-width: 900px;
             margin-bottom: 20px;
-            background: linear-gradient(180deg, #FFFFFF 0%, #CBD5E1 100%);
+            background: linear-gradient(180deg, #fff 0%, #cbd5e1 100%);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent
         }
 
         .hero p {
@@ -218,7 +214,7 @@
             color: var(--text-muted);
             max-width: 650px;
             margin-bottom: 35px;
-            font-weight: 400;
+            font-weight: 400
         }
 
         .btn {
@@ -228,20 +224,19 @@
             border: none;
             border-radius: 30px;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: .95rem;
             font-weight: 700;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all .3s ease;
             box-shadow: var(--glow-shadow);
-            display: inline-block;
+            display: inline-block
         }
 
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, .3)
         }
 
-        /* Stats Banner */
         .stats-banner {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -250,21 +245,21 @@
             padding: 50px 8%;
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
-            text-align: center;
+            text-align: center
         }
 
         .stat-item h3 {
             font-size: 2.5rem;
             font-weight: 800;
             color: var(--accent-gold);
-            margin-bottom: 5px;
+            margin-bottom: 5px
         }
 
         .stat-item p {
             color: var(--text-muted);
-            font-size: 0.9rem;
+            font-size: .9rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1px
         }
 
         .highlights {
@@ -272,7 +267,7 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 24px;
             margin-top: 20px;
-            padding: 0 8%;
+            padding: 0 8%
         }
 
         .highlight-card {
@@ -281,29 +276,28 @@
             border-radius: 16px;
             border: 1px solid var(--border-color);
             box-shadow: var(--card-shadow);
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .highlight-card:hover {
-            border-color: rgba(212, 175, 55, 0.3);
-            transform: translateY(-5px);
+            border-color: rgba(212, 175, 55, .3);
+            transform: translateY(-5px)
         }
 
         .highlight-card h3 {
             color: var(--accent-gold);
             font-size: 1.2rem;
             margin-bottom: 10px;
-            font-weight: 600;
+            font-weight: 600
         }
 
         .highlight-card p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: .95rem
         }
 
-        /* Works Section */
         #works {
-            background-color: var(--surface-bg);
+            background: var(--surface-bg)
         }
 
         .filter-container {
@@ -311,7 +305,7 @@
             justify-content: center;
             gap: 12px;
             margin-bottom: 40px;
-            flex-wrap: wrap;
+            flex-wrap: wrap
         }
 
         .filter-btn {
@@ -322,21 +316,22 @@
             border-radius: 20px;
             cursor: pointer;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
+            font-size: .9rem;
+            transition: all .3s ease
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             background: var(--accent-gold);
             color: #000;
             border-color: var(--accent-gold);
-            box-shadow: var(--glow-shadow);
+            box-shadow: var(--glow-shadow)
         }
 
         .works-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            gap: 30px
         }
 
         .work-card {
@@ -344,14 +339,14 @@
             border-radius: 16px;
             overflow: hidden;
             border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-            cursor: pointer;
+            transition: all .3s ease;
+            cursor: pointer
         }
 
         .work-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(212, 175, 55, 0.3);
-            box-shadow: var(--card-shadow);
+            border-color: rgba(212, 175, 55, .3);
+            box-shadow: var(--card-shadow)
         }
 
         .work-img {
@@ -359,6 +354,7 @@
             background-size: cover;
             background-position: center;
             position: relative;
+            overflow: hidden
         }
 
         .work-img::after {
@@ -366,50 +362,63 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(180deg, transparent 50%, var(--surface-card) 100%);
+            pointer-events: none
+        }
+
+        .work-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            opacity: 0;
+            transition: opacity .35s ease
+        }
+
+        .work-img img.loaded {
+            opacity: 1
         }
 
         .work-info {
             padding: 24px;
-            position: relative;
+            position: relative
         }
 
         .work-info h3 {
             color: var(--text-main);
             font-size: 1.25rem;
             margin-bottom: 8px;
-            font-weight: 700;
+            font-weight: 700
         }
 
         .work-info .location {
             color: var(--accent-gold);
-            font-size: 0.85rem;
+            font-size: .85rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
-            display: block;
+            display: block
         }
 
         .work-info p {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: .95rem
         }
 
         .click-hint {
             margin-top: 15px;
-            font-size: 0.85rem;
+            font-size: .85rem;
             color: var(--accent-gold);
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 6px
         }
 
-        /* Modal Overlay - Image First + Envelope / Letter Reveal */
         .modal-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0, 0, 0, .85);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             z-index: 2000;
@@ -419,12 +428,12 @@
             padding: 20px;
             opacity: 0;
             visibility: hidden;
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .modal-overlay.active {
             opacity: 1;
-            visibility: visible;
+            visibility: visible
         }
 
         .modal-container {
@@ -437,19 +446,19 @@
             overflow-y: auto;
             position: relative;
             box-shadow: var(--card-shadow);
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
+            transform: scale(.9);
+            transition: transform .3s ease
         }
 
         .modal-overlay.active .modal-container {
-            transform: scale(1);
+            transform: scale(1)
         }
 
         .modal-close {
             position: absolute;
             top: 15px;
             right: 20px;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, .6);
             border: none;
             color: #fff;
             font-size: 1.8rem;
@@ -460,146 +469,80 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 20;
-            transition: background 0.3s ease;
+            z-index: 10;
+            transition: background .3s ease
         }
 
         .modal-close:hover {
             background: var(--accent-gold);
-            color: #000;
-        }
-
-        /* Project image acts as the envelope */
-        .modal-image-reveal {
-            position: relative;
-            width: 100%;
-            height: 360px;
-            overflow: hidden;
-            cursor: pointer;
-            background: #000;
+            color: #000
         }
 
         .modal-header-img {
             width: 100%;
-            height: 100%;
+            height: 90%;
             object-fit: cover;
-            display: block;
-            transition: transform 0.7s ease;
+            border-bottom: 1px solid var(--border-color)
         }
 
-        .modal-image-reveal:hover .modal-header-img {
-            transform: scale(1.03);
-        }
-
-        /* Detail sheet slides down from the top like a letter */
-        .modal-letter {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            min-height: 100%;
-            background: linear-gradient(145deg, #131b27 0%, #1a2433 100%);
-            padding: 70px 30px 30px;
-            overflow-y: auto;
-            transform: translateY(-101%);
-            transition: transform 0.65s cubic-bezier(0.77, 0, 0.175, 1);
-            z-index: 5;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.35);
-        }
-
-        .modal-image-reveal.revealed .modal-letter {
-            transform: translateY(0);
-        }
-
-        .modal-image-reveal::after {
-            content: 'CLICK TO VIEW PROJECT DETAILS';
-            position: absolute;
-            left: 50%;
-            bottom: 22px;
-            transform: translateX(-50%);
-            padding: 9px 16px;
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            border-radius: 20px;
-            background: rgba(0, 0, 0, 0.55);
-            color: #fff;
-            font-size: 0.72rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            white-space: nowrap;
-            z-index: 8;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .modal-image-reveal.revealed::after {
-            content: 'CLICK TO HIDE DETAILS';
-            opacity: 0.7;
+        .modal-body {
+            padding: 30px
         }
 
         .modal-location {
             color: var(--accent-gold);
-            font-size: 0.85rem;
+            font-size: .85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 5px;
-            display: block;
+            display: block
         }
 
         .modal-title {
             font-size: 1.6rem;
             font-weight: 800;
             color: var(--text-main);
-            margin-bottom: 15px;
+            margin-bottom: 15px
         }
 
         .modal-description {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: .95rem;
             line-height: 1.7;
-            margin-bottom: 20px;
+            margin-bottom: 20px
         }
 
-        .modal-body {
-            padding: 20px 30px 30px;
-        }
-
-        .modal-body .btn {
-            margin-top: 5px;
-        }
-
-
-
-        /* --- BEYOND THE ROLE SECTION (3D FLIP CARDS) --- */
         #beyond-role {
-            background-color: var(--primary-bg);
+            background: var(--primary-bg)
         }
 
         .beyond-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            gap: 30px
         }
 
         .beyond-card-container {
             perspective: 1000px;
             height: 380px;
-            cursor: pointer;
+            cursor: pointer
         }
 
         .beyond-card {
             position: relative;
             width: 100%;
             height: 100%;
-            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            transform-style: preserve-3d;
+            transition: transform .8s cubic-bezier(.175, .885, .32, 1.275);
+            transform-style: preserve-3d
         }
 
         .beyond-card-container:hover .beyond-card {
-            transform: rotateY(180deg);
+            transform: rotateY(180deg)
         }
 
-        .beyond-card-front, .beyond-card-back {
+        .beyond-card-front,
+        .beyond-card-back {
             position: absolute;
             inset: 0;
             width: 100%;
@@ -615,18 +558,18 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            box-shadow: var(--card-shadow);
+            box-shadow: var(--card-shadow)
         }
 
         .beyond-card-front {
-            z-index: 2;
+            z-index: 2
         }
 
         .beyond-card-back {
             transform: rotateY(180deg);
             background: linear-gradient(145deg, #131b27 0%, #1a2433 100%);
-            border-color: rgba(212, 175, 55, 0.4);
-            justify-content: space-between;
+            border-color: rgba(212, 175, 55, .4);
+            justify-content: space-between
         }
 
         .beyond-avatar {
@@ -636,52 +579,53 @@
             margin-bottom: 20px;
             border: 3px solid var(--accent-gold);
             box-shadow: var(--glow-shadow);
-            overflow: hidden;
+            overflow: hidden
         }
 
         .beyond-avatar img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block
         }
 
         .beyond-card-front h3 {
             font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-main);
-            margin-bottom: 6px;
+            margin-bottom: 6px
         }
 
         .beyond-card-front .role-title {
             color: var(--accent-gold);
-            font-size: 0.9rem;
+            font-size: .9rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 18px;
+            margin-bottom: 18px
         }
 
         .flip-hint {
-            font-size: 0.8rem;
+            font-size: .8rem;
             color: var(--text-muted);
             margin-top: 10px;
             border: 1px dashed var(--border-color);
             padding: 6px 14px;
-            border-radius: 15px;
+            border-radius: 15px
         }
 
         .beyond-card-back .quote-icon {
             font-size: 1.8rem;
             color: var(--accent-gold);
-            line-height: 1;
+            line-height: 1
         }
 
         .beyond-card-back blockquote {
-            font-size: 0.92rem;
+            font-size: .92rem;
             color: var(--text-main);
             line-height: 1.6;
             font-style: italic;
-            margin: 10px 0;
+            margin: 10px 0
         }
 
         .beyond-card-back .modal-trigger-btn {
@@ -690,34 +634,26 @@
             color: var(--accent-gold);
             padding: 6px 16px;
             border-radius: 20px;
-            font-size: 0.8rem;
+            font-size: .8rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .beyond-card-back .modal-trigger-btn:hover {
             background: var(--accent-gold);
-            color: #000;
+            color: #000
         }
-
-        /* =========================================
-           TRENDY CONTACT SECTION
-        ========================================= */
 
         #contact {
             position: relative;
             background:
-                radial-gradient(
-                    circle at 10% 20%,
+                radial-gradient(circle at 10% 20%,
                     rgba(212, 175, 55, 0.08),
-                    transparent 35%
-                ),
-                radial-gradient(
-                    circle at 90% 80%,
+                    transparent 35%),
+                radial-gradient(circle at 90% 80%,
                     rgba(212, 175, 55, 0.05),
-                    transparent 35%
-                ),
+                    transparent 35%),
                 var(--surface-bg);
             overflow: hidden;
         }
@@ -792,7 +728,7 @@
             color: var(--accent-gold);
         }
 
-        .contact-intro > p {
+        .contact-intro>p {
             max-width: 430px;
             color: var(--text-muted);
             font-size: 1rem;
@@ -858,11 +794,9 @@
             padding: 38px;
             border-radius: 24px;
             background:
-                linear-gradient(
-                    145deg,
+                linear-gradient(145deg,
                     rgba(255, 255, 255, 0.055),
-                    rgba(255, 255, 255, 0.015)
-                );
+                    rgba(255, 255, 255, 0.015));
             border: 1px solid var(--border-color);
             box-shadow:
                 0 30px 80px rgba(0, 0, 0, 0.18),
@@ -878,12 +812,10 @@
             left: 40px;
             right: 40px;
             height: 2px;
-            background: linear-gradient(
-                90deg,
-                transparent,
-                var(--accent-gold),
-                transparent
-            );
+            background: linear-gradient(90deg,
+                    transparent,
+                    var(--accent-gold),
+                    transparent);
             opacity: 0.7;
         }
 
@@ -894,7 +826,7 @@
             margin-bottom: 30px;
         }
 
-        .form-card-top > span {
+        .form-card-top>span {
             color: var(--text-main);
             font-size: 0.72rem;
             font-weight: 700;
@@ -969,10 +901,10 @@
             box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.08);
         }
 
-        .modern-field input:focus + label,
-        .modern-field input:not(:placeholder-shown) + label,
-        .modern-field textarea:focus + label,
-        .modern-field textarea:not(:placeholder-shown) + label {
+        .modern-field input:focus+label,
+        .modern-field input:not(:placeholder-shown)+label,
+        .modern-field textarea:focus+label,
+        .modern-field textarea:not(:placeholder-shown)+label {
             top: 5px;
             font-size: 0.68rem;
             color: var(--accent-gold);
@@ -1027,7 +959,6 @@
             opacity: 0.7;
         }
 
-        /* Back to Top Button */
         .back-to-top {
             position: fixed;
             bottom: 30px;
@@ -1046,31 +977,40 @@
             font-weight: bold;
             box-shadow: var(--glow-shadow);
             z-index: 999;
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .back-to-top.show {
-            display: flex;
+            display: flex
         }
 
-        /* Footer */
         footer {
-            background-color: var(--primary-bg);
+            background: var(--primary-bg);
             color: var(--text-muted);
             text-align: center;
             padding: 25px;
-            font-size: 0.88rem;
-            border-top: 1px solid var(--border-color);
+            font-size: .88rem;
+            border-top: 1px solid var(--border-color)
         }
 
-        /* Responsive Breakpoints */
-        @media (max-width: 768px) {
+        .data-status {
+            text-align: center;
+            color: var(--text-muted);
+            padding: 30px 10px;
+            grid-column: 1/-1
+        }
+
+        .data-status.error {
+            color: #fca5a5
+        }
+
+        @media(max-width:768px) {
             header {
-                padding: 1rem 5%;
+                padding: 1rem 5%
             }
 
             .mobile-menu-btn {
-                display: block;
+                display: block
             }
 
             nav {
@@ -1081,21 +1021,455 @@
                 background: var(--surface-bg);
                 border-bottom: 1px solid var(--border-color);
                 padding: 20px 0;
-                display: none;
+                display: none
             }
 
             nav.active {
-                display: block;
+                display: block
             }
 
             nav ul {
                 flex-direction: column;
                 align-items: center;
-                gap: 15px;
+                gap: 15px
             }
 
             section {
-                padding: 90px 5% 60px 5%;
+                padding: 90px 5% 60px
+            }
+
+            .contact-container {
+                padding: 28px 20px
+            }
+
+            .works-grid,
+            .beyond-grid {
+                grid-template-columns: 1fr
+            }
+
+            .company-name {
+                font-size: .95rem
+            }
+
+            .hero h1 {
+                font-size: 2.3rem
+            }
+        }
+
+        /* =========================================================
+   SSA PREMIUM MOTION UI — CSS ONLY
+   ========================================================= */
+
+        :root {
+            --motion-gold: #d4af37;
+            --motion-gold-soft: rgba(212, 175, 55, .16);
+            --motion-line: rgba(255, 255, 255, .055);
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 12% 8%, rgba(212, 175, 55, .055), transparent 28%),
+                radial-gradient(circle at 88% 42%, rgba(212, 175, 55, .035), transparent 25%),
+                var(--primary-bg);
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+            pointer-events: none;
+            opacity: .42;
+            background-image:
+                linear-gradient(var(--motion-line) 1px, transparent 1px),
+                linear-gradient(90deg, var(--motion-line) 1px, transparent 1px);
+            background-size: 72px 72px;
+            mask-image: linear-gradient(to bottom, black, transparent 82%);
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent 82%);
+        }
+
+        body::after {
+            content: "";
+            position: fixed;
+            width: 520px;
+            height: 520px;
+            left: -260px;
+            top: 25%;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            background: radial-gradient(circle, rgba(212, 175, 55, .075), transparent 68%);
+            animation: ambientDrift 14s ease-in-out infinite alternate;
+        }
+
+        @keyframes ambientDrift {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                transform: translate3d(55vw, 14vh, 0);
+            }
+        }
+
+        #premiumProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 0;
+            z-index: 9999;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), #fff, var(--accent-gold));
+            box-shadow: 0 0 14px rgba(212, 175, 55, .65);
+        }
+
+        header {
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            background: rgba(11, 15, 23, .72) !important;
+            border-bottom: 1px solid rgba(255, 255, 255, .055) !important;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            left: 5%;
+            right: 5%;
+            bottom: -1px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, .38), transparent);
+            pointer-events: none;
+        }
+
+        nav a {
+            position: relative;
+            transition: color .25s ease, transform .25s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -7px;
+            width: 0;
+            height: 1px;
+            transform: translateX(-50%);
+            background: var(--accent-gold);
+            box-shadow: 0 0 8px rgba(212, 175, 55, .55);
+            transition: width .3s ease;
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 70%;
+        }
+
+        .hero {
+            isolation: isolate;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            background:
+                linear-gradient(90deg, transparent 49.8%, rgba(212, 175, 55, .10) 50%, transparent 50.2%),
+                linear-gradient(0deg, transparent 49.8%, rgba(212, 175, 55, .065) 50%, transparent 50.2%);
+            background-size: 180px 180px;
+            opacity: .38;
+            mask-image: linear-gradient(to bottom, transparent, black 22%, black 70%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 22%, black 70%, transparent);
+            animation: blueprintShift 18s linear infinite;
+        }
+
+        @keyframes blueprintShift {
+            from {
+                background-position: 0 0, 0 0;
+            }
+
+            to {
+                background-position: 180px 180px, -180px 180px;
+            }
+        }
+
+        .hero-video {
+            transform: scale(1.035);
+            transition: transform 1.5s cubic-bezier(.2, .7, .2, 1);
+            filter: saturate(.82) contrast(1.05);
+        }
+
+        .hero:hover .hero-video {
+            transform: scale(1.065);
+        }
+
+        .hero h1 {
+            letter-spacing: -.045em;
+            text-shadow: 0 14px 50px rgba(0, 0, 0, .42);
+        }
+
+        .hero p {
+            max-width: 700px;
+        }
+
+        .btn {
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+            transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            inset: -80% -30%;
+            z-index: -1;
+            background: linear-gradient(115deg, transparent 35%, rgba(255, 255, 255, .30), transparent 65%);
+            transform: translateX(-90%) rotate(8deg);
+            transition: transform .7s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 40px rgba(212, 175, 55, .18);
+        }
+
+        .btn:hover::before {
+            transform: translateX(90%) rotate(8deg);
+        }
+
+        .stats-banner {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, .07);
+            background: linear-gradient(135deg, rgba(255, 255, 255, .055), rgba(255, 255, 255, .018));
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, .24);
+        }
+
+        .stats-banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -35%;
+            width: 35%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+            animation: statsSweep 5s linear infinite;
+        }
+
+        @keyframes statsSweep {
+            to {
+                left: 105%;
+            }
+        }
+
+        .stat-item {
+            position: relative;
+        }
+
+        .stat-item::after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            right: -3px;
+            top: 50%;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            box-shadow: 0 0 12px rgba(212, 175, 55, .7);
+            opacity: .45;
+        }
+
+        .stat-item h3 {
+            text-shadow: 0 0 25px rgba(212, 175, 55, .12);
+        }
+
+        .section-title {
+            position: relative;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title::before {
+            content: "//";
+            position: absolute;
+            left: -34px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent-gold);
+            font-size: .65em;
+            letter-spacing: .1em;
+            opacity: .8;
+        }
+
+        .work-card,
+        .highlight-card,
+        .beyond-card {
+            transform-style: preserve-3d;
+            will-change: transform;
+            transition:
+                transform .45s cubic-bezier(.2, .75, .2, 1),
+                box-shadow .45s ease,
+                border-color .35s ease;
+        }
+
+        .work-card:hover,
+        .highlight-card:hover,
+        .beyond-card:hover {
+            transform: perspective(900px) rotateX(2deg) rotateY(-2deg) translateY(-8px);
+            box-shadow:
+                0 28px 60px rgba(0, 0, 0, .34),
+                0 0 0 1px rgba(212, 175, 55, .12),
+                0 0 34px rgba(212, 175, 55, .055);
+        }
+
+        .work-card::after,
+        .highlight-card::after,
+        .beyond-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0;
+            background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(255, 255, 255, .10), transparent 28%);
+            transition: opacity .35s ease;
+        }
+
+        .work-card:hover::after,
+        .highlight-card:hover::after,
+        .beyond-card:hover::after {
+            opacity: 1;
+        }
+
+        .work-img::after {
+            content: "VIEW PROJECT  ↗";
+            position: absolute;
+            right: 16px;
+            bottom: 16px;
+            padding: 8px 11px;
+            font-size: 9px;
+            letter-spacing: .16em;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, .18);
+            background: rgba(11, 15, 23, .62);
+            backdrop-filter: blur(10px);
+            transform: translateY(10px);
+            opacity: 0;
+            transition: .35s ease;
+        }
+
+        .work-card:hover .work-img::after {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .work-img img {
+            transition: transform .75s cubic-bezier(.2, .75, .2, 1), opacity .35s ease !important;
+        }
+
+        .work-card:hover .work-img img {
+            transform: scale(1.055);
+        }
+
+        .filter-container {
+            position: relative;
+        }
+
+        .filter-btn {
+            transition: .3s ease !important;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .beyond-avatar {
+            position: relative;
+        }
+
+        .beyond-avatar::after {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 1px solid rgba(212, 175, 55, .18);
+            border-radius: inherit;
+            transform: scale(.92);
+            opacity: 0;
+            transition: .4s ease;
+        }
+
+        .beyond-card:hover .beyond-avatar::after {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .modal-container {
+            border: 1px solid rgba(212, 175, 55, .20) !important;
+            box-shadow:
+                0 40px 100px rgba(0, 0, 0, .62),
+                0 0 60px rgba(212, 175, 55, .06) !important;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .modal-container::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 42%;
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent-gold), transparent);
+            z-index: 4;
+        }
+
+        .reveal {
+            transform: translateY(28px) scale(.985);
+            opacity: 0;
+            transition:
+                opacity .75s ease,
+                transform .85s cubic-bezier(.2, .75, .2, 1);
+        }
+
+        .reveal.active {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body::before {
+                background-size: 48px 48px;
+            }
+
+            .hero::before {
+                background-size: 120px 120px;
+            }
+
+            .section-title::before {
+                display: none;
+            }
+
+            .work-card:hover,
+            .highlight-card:hover,
+            .beyond-card:hover {
+                transform: translateY(-4px);
             }
 
             .contact-wrapper {
@@ -1108,19 +1482,15 @@
             }
 
             .contact-intro h2 {
-                font-size: clamp(2.5rem, 10vw, 4rem);
+                font-size: 2.7rem;
             }
 
-            .modal-image-reveal {
-                height: 300px;
+            .contact-intro>p {
+                font-size: 0.9rem;
             }
 
-            .modal-letter {
-                padding: 65px 22px 24px;
-            }
-
-            .modal-body {
-                padding: 16px 22px 22px;
+            .contact-detail {
+                padding: 13px;
             }
 
             .contact-form-card {
@@ -1137,709 +1507,326 @@
                 grid-template-columns: 1fr;
                 gap: 0;
             }
-
-            .contact-intro h2 {
-                font-size: 2.7rem;
-            }
-
-            .contact-intro > p {
-                font-size: 0.9rem;
-            }
-
-            .contact-detail {
-                padding: 13px;
-            }
         }
-    
-/* GitHub data loading */
-.data-status{text-align:center;color:var(--text-muted);padding:30px 10px;grid-column:1/-1}
-.data-status.error{color:#fca5a5}
-.work-img img,.beyond-avatar img{width:100%;height:100%;object-fit:cover;display:block}
-.work-img img{opacity:0;transition:opacity .35s ease}
-.work-img img.loaded{opacity:1}
-
-
-/* =========================================================
-   SSA PREMIUM MOTION UI — CSS ONLY / NO BLENDER REQUIRED
-   ========================================================= */
-
-:root {
-    --motion-gold: #d4af37;
-    --motion-gold-soft: rgba(212,175,55,.16);
-    --motion-line: rgba(255,255,255,.055);
-}
-
-/* Architectural blueprint atmosphere */
-body {
-    background:
-        radial-gradient(circle at 12% 8%, rgba(212,175,55,.055), transparent 28%),
-        radial-gradient(circle at 88% 42%, rgba(212,175,55,.035), transparent 25%),
-        var(--primary-bg);
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -2;
-    pointer-events: none;
-    opacity: .42;
-    background-image:
-        linear-gradient(var(--motion-line) 1px, transparent 1px),
-        linear-gradient(90deg, var(--motion-line) 1px, transparent 1px);
-    background-size: 72px 72px;
-    mask-image: linear-gradient(to bottom, black, transparent 82%);
-    -webkit-mask-image: linear-gradient(to bottom, black, transparent 82%);
-}
-
-body::after {
-    content: "";
-    position: fixed;
-    width: 520px;
-    height: 520px;
-    left: -260px;
-    top: 25%;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: -1;
-    background: radial-gradient(circle, rgba(212,175,55,.075), transparent 68%);
-    animation: ambientDrift 14s ease-in-out infinite alternate;
-}
-
-@keyframes ambientDrift {
-    from { transform: translate3d(0,0,0); }
-    to { transform: translate3d(55vw,14vh,0); }
-}
-
-/* Thin reading-progress line */
-#premiumProgress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 2px;
-    width: 0;
-    z-index: 9999;
-    background: linear-gradient(90deg, transparent, var(--accent-gold), #fff, var(--accent-gold));
-    box-shadow: 0 0 14px rgba(212,175,55,.65);
-}
-
-/* Header becomes a floating architectural panel */
-header {
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    background: rgba(11,15,23,.72) !important;
-    border-bottom: 1px solid rgba(255,255,255,.055) !important;
-}
-
-header::after {
-    content: "";
-    position: absolute;
-    left: 5%;
-    right: 5%;
-    bottom: -1px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(212,175,55,.38), transparent);
-    pointer-events: none;
-}
-
-nav a {
-    position: relative;
-    transition: color .25s ease, transform .25s ease;
-}
-
-nav a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -7px;
-    width: 0;
-    height: 1px;
-    transform: translateX(-50%);
-    background: var(--accent-gold);
-    box-shadow: 0 0 8px rgba(212,175,55,.55);
-    transition: width .3s ease;
-}
-
-nav a:hover::after,
-nav a.active::after {
-    width: 70%;
-}
-
-/* Hero depth */
-.hero {
-    isolation: isolate;
-    overflow: hidden;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    background:
-        linear-gradient(90deg, transparent 49.8%, rgba(212,175,55,.10) 50%, transparent 50.2%),
-        linear-gradient(0deg, transparent 49.8%, rgba(212,175,55,.065) 50%, transparent 50.2%);
-    background-size: 180px 180px;
-    opacity: .38;
-    mask-image: linear-gradient(to bottom, transparent, black 22%, black 70%, transparent);
-    -webkit-mask-image: linear-gradient(to bottom, transparent, black 22%, black 70%, transparent);
-    animation: blueprintShift 18s linear infinite;
-}
-
-@keyframes blueprintShift {
-    from { background-position: 0 0, 0 0; }
-    to { background-position: 180px 180px, -180px 180px; }
-}
-
-.hero-video {
-    transform: scale(1.035);
-    transition: transform 1.5s cubic-bezier(.2,.7,.2,1);
-    filter: saturate(.82) contrast(1.05);
-}
-
-.hero:hover .hero-video {
-    transform: scale(1.065);
-}
-
-.hero h1 {
-    letter-spacing: -.045em;
-    text-shadow: 0 14px 50px rgba(0,0,0,.42);
-}
-
-.hero p {
-    max-width: 700px;
-}
-
-.btn {
-    position: relative;
-    overflow: hidden;
-    isolation: isolate;
-    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-}
-
-.btn::before {
-    content: "";
-    position: absolute;
-    inset: -80% -30%;
-    z-index: -1;
-    background: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.30), transparent 65%);
-    transform: translateX(-90%) rotate(8deg);
-    transition: transform .7s ease;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 16px 40px rgba(212,175,55,.18);
-}
-
-.btn:hover::before {
-    transform: translateX(90%) rotate(8deg);
-}
-
-/* Stats = glass instrument panel */
-.stats-banner {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,.07);
-    background: linear-gradient(135deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 25px 70px rgba(0,0,0,.24);
-}
-
-.stats-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -35%;
-    width: 35%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
-    animation: statsSweep 5s linear infinite;
-}
-
-@keyframes statsSweep {
-    to { left: 105%; }
-}
-
-.stat-item {
-    position: relative;
-}
-
-.stat-item::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    right: -3px;
-    top: 50%;
-    border-radius: 50%;
-    background: var(--accent-gold);
-    box-shadow: 0 0 12px rgba(212,175,55,.7);
-    opacity: .45;
-}
-
-.stat-item h3 {
-    text-shadow: 0 0 25px rgba(212,175,55,.12);
-}
-
-/* Section titles get a technical marker */
-.section-title {
-    position: relative;
-    width: fit-content;
-}
-
-.section-title::before {
-    content: "//";
-    position: absolute;
-    left: -34px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--accent-gold);
-    font-size: .65em;
-    letter-spacing: .1em;
-    opacity: .8;
-}
-
-/* Project cards: subtle 3D depth without 3D assets */
-.work-card,
-.highlight-card,
-.beyond-card {
-    transform-style: preserve-3d;
-    will-change: transform;
-    transition:
-        transform .45s cubic-bezier(.2,.75,.2,1),
-        box-shadow .45s ease,
-        border-color .35s ease;
-}
-
-.work-card:hover,
-.highlight-card:hover,
-.beyond-card:hover {
-    transform: perspective(900px) rotateX(2deg) rotateY(-2deg) translateY(-8px);
-    box-shadow:
-        0 28px 60px rgba(0,0,0,.34),
-        0 0 0 1px rgba(212,175,55,.12),
-        0 0 34px rgba(212,175,55,.055);
-}
-
-.work-card::after,
-.highlight-card::after,
-.beyond-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    opacity: 0;
-    background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,.10), transparent 28%);
-    transition: opacity .35s ease;
-}
-
-.work-card:hover::after,
-.highlight-card:hover::after,
-.beyond-card:hover::after {
-    opacity: 1;
-}
-
-.work-img {
-    position: relative;
-    overflow: hidden;
-}
-
-.work-img::after {
-    content: "VIEW PROJECT  ↗";
-    position: absolute;
-    right: 16px;
-    bottom: 16px;
-    padding: 8px 11px;
-    font-size: 9px;
-    letter-spacing: .16em;
-    color: #fff;
-    border: 1px solid rgba(255,255,255,.18);
-    background: rgba(11,15,23,.62);
-    backdrop-filter: blur(10px);
-    transform: translateY(10px);
-    opacity: 0;
-    transition: .35s ease;
-}
-
-.work-card:hover .work-img::after {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.work-img img {
-    transition: transform .75s cubic-bezier(.2,.75,.2,1), opacity .35s ease !important;
-}
-
-.work-card:hover .work-img img {
-    transform: scale(1.055);
-}
-
-/* Filter buttons become minimal segmented controls */
-.filter-container {
-    position: relative;
-}
-
-.filter-btn {
-    transition: .3s ease !important;
-}
-
-.filter-btn:hover {
-    transform: translateY(-2px);
-}
-
-/* Team cards */
-.beyond-avatar {
-    position: relative;
-}
-
-.beyond-avatar::after {
-    content: "";
-    position: absolute;
-    inset: 8px;
-    border: 1px solid rgba(212,175,55,.18);
-    border-radius: inherit;
-    transform: scale(.92);
-    opacity: 0;
-    transition: .4s ease;
-}
-
-.beyond-card:hover .beyond-avatar::after {
-    transform: scale(1);
-    opacity: 1;
-}
-
-/* Modal gets a cinematic glass shell */
-.modal-container {
-    border: 1px solid rgba(212,175,55,.20) !important;
-    box-shadow:
-        0 40px 100px rgba(0,0,0,.62),
-        0 0 60px rgba(212,175,55,.06) !important;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-}
-
-.modal-container::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 42%;
-    height: 1px;
-    background: linear-gradient(90deg, var(--accent-gold), transparent);
-    z-index: 4;
-}
-
-/* Reveal becomes more cinematic */
-.reveal {
-    transform: translateY(28px) scale(.985);
-    opacity: 0;
-    transition:
-        opacity .75s ease,
-        transform .85s cubic-bezier(.2,.75,.2,1);
-}
-
-.reveal.active {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-}
-
-/* Accessibility / reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: .01ms !important;
-    }
-}
-
-@media (max-width: 768px) {
-    body::before { background-size: 48px 48px; }
-    .hero::before { background-size: 120px 120px; }
-    .section-title::before { display: none; }
-    .work-card:hover,
-    .highlight-card:hover,
-    .beyond-card:hover {
-        transform: translateY(-4px);
-    }
-}
-
-</style>
+    </style>
 </head>
 
 <body>
-<div id="premiumProgress" aria-hidden="true"></div>
-<header>
-    <div class="logo-container">
-        <div class="logo-placeholder"><img src="logo.jpeg" alt="SSA Logo"></div>
-        <div class="company-name">SSA PROJECTS PVT. LTD.</div>
-    </div>
-    <button class="mobile-menu-btn" id="menuToggle">&#9776;</button>
-    <nav id="navMenu">
-        <ul>
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#works" class="nav-link">Projects</a></li>
-            <li><a href="#beyond-role" class="nav-link">Beyond The Role</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="home">
-    <div class="hero">
-        <video class="hero-video" id="heroVideo" autoplay loop muted playsinline preload="none">
-            <source data-src="video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <div class="hero-overlay"></div>
-        <h1>Engineering Excellence. Built to perform.</h1>
-        <p>Delivering world-class luxury developments, commercial landmarks, and turnkey project management across India.</p>
-        <a href="#works" class="btn">Projects</a>
-    </div>
-
-    <div class="stats-banner reveal">
-        <div class="stat-item"><h3>27+</h3><p>Years Experience</p></div>
-        <div class="stat-item"><h3>50+</h3><p>Landmark Projects</p></div>
-        <div class="stat-item"><h3>5M+</h3><p>Sq. Ft. Built</p></div>
-        <div class="stat-item"><h3>100%</h3><p>On-Time Delivery</p></div>
-    </div>
-
-    <div style="padding-top:60px;">
-        <h2 class="section-title reveal">Why SSA Projects?</h2>
-        <div class="highlights">
-            <div class="highlight-card reveal"><h3>Luxury Hospitality</h3><p>Proven track record in executing top-tier hotel projects like JW Marriott & Ritz Carlton.</p></div>
-            <div class="highlight-card reveal"><h3>Pan-India Footprint</h3><p>Active landmark developments across Shimla, Udaipur, Shillong, and Noida.</p></div>
-            <div class="highlight-card reveal"><h3>End-to-End Execution</h3><p>Complete project management from initial architectural design to site completion.</p></div>
+    <div id="premiumProgress" aria-hidden="true"></div>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder"><img src="logo.jpeg" alt="SSA Logo"></div>
+            <div class="company-name">SSA PROJECTS PVT. LTD.</div>
         </div>
-    </div>
-</section>
 
-<section id="works">
-    <h2 class="section-title reveal">Our Featured Projects</h2>
-    <div class="filter-container reveal">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="hospitality">Hospitality</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-    </div>
-    <div class="works-grid" id="worksGrid">
-        <div class="data-status">Loading projects…</div>
-    </div>
-</section>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Open navigation">&#9776;</button>
 
-<div class="modal-overlay" id="projectModal">
-    <div class="modal-container">
-        <button class="modal-close" id="modalClose">&times;</button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#works" class="nav-link">Projects</a></li>
+                <li><a href="#beyond-role" class="nav-link">Beyond The
+                        Role</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Click the image to reveal the project details like pulling a letter from an envelope -->
-        <div class="modal-image-reveal" id="modalImageReveal">
-            <img src="" alt="Project" class="modal-header-img" id="modalImg">
+    <section id="home">
+        <div class="hero">
+            <video class="hero-video" id="heroVideo" autoplay loop muted playsinline preload="none">
+                <source data-src="video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="hero-overlay"></div>
+            <h1>Engineering Excellence. Built to perform.</h1>
+            <p>Delivering world-class luxury developments, commercial
+                landmarks, and turnkey project management across India.</p>
+            <a href="#works" class="btn">Projects</a>
+        </div>
 
-            <div class="modal-letter">
+        <div class="stats-banner reveal">
+            <div class="stat-item">
+                <h3>27+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Landmark
+                    Projects</p>
+            </div>
+            <div class="stat-item">
+                <h3>5M+</h3>
+                <p>Sq. Ft. Built</p>
+            </div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>On-Time
+                    Delivery</p>
+            </div>
+        </div>
+
+        <div style="padding-top:60px;">
+            <h2 class="section-title reveal">Why SSA Projects?</h2>
+            <div class="highlights">
+                <div class="highlight-card reveal">
+                    <h3>Luxury
+                        Hospitality</h3>
+                    <p>Proven track record in executing
+                        top-tier hotel projects like JW Marriott & Ritz
+                        Carlton.</p>
+                </div>
+                <div class="highlight-card reveal">
+                    <h3>Pan-India
+                        Footprint</h3>
+                    <p>Active landmark developments across
+                        Shimla, Udaipur, Shillong, and Noida.</p>
+                </div>
+                <div class="highlight-card reveal">
+                    <h3>End-to-End
+                        Execution</h3>
+                    <p>Complete project management from
+                        initial architectural design to site
+                        completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <h2 class="section-title reveal">Our Featured Projects</h2>
+
+        <div class="filter-container reveal">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+            <button class="filter-btn" data-filter="commercial">Commercial</button>
+        </div>
+
+        <div class="works-grid" id="worksGrid">
+            <div class="data-status">Loading projects…</div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+            <img src="logo.jpeg" alt="Project" class="modal-header-img" id="modalImg">
+            <div class="modal-body">
                 <span class="modal-location" id="modalLocation"></span>
                 <h2 class="modal-title" id="modalTitle"></h2>
                 <p class="modal-description" id="modalDescription"></p>
+                <button class="btn" id="modalCloseBtn">Close</button>
             </div>
-        </div>
-
-        <div class="modal-body">
-            <button class="btn" id="modalCloseBtn">Close</button>
         </div>
     </div>
-</div>
 
-<section id="beyond-role">
-    <h2 class="section-title reveal">Beyond The Role</h2>
-    <div class="beyond-grid" id="teamGrid">
-        <div class="data-status">Loading team…</div>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="contact-wrapper">
-
-        <div class="contact-intro reveal">
-            <span class="contact-eyebrow">GET IN TOUCH</span>
-
-            <h2>
-                Let’s build something
-                <span>remarkable.</span>
-            </h2>
-
-            <p>
-                Have a project in mind? Tell us what you're looking to build,
-                and our team will get back to you.
-            </p>
-
-            <div class="contact-details">
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">✉</div>
-                    <div>
-                        <small>Email us</small>
-                        <strong>info@ssaprojects.com</strong>
-                    </div>
-                </div>
-
-                <div class="contact-detail">
-                    <div class="contact-detail-icon">↗</div>
-                    <div>
-                        <small>Business inquiries</small>
-                        <strong>Let's discuss your project</strong>
-                    </div>
-                </div>
-            </div>
+    <section id="beyond-role">
+        <h2 class="section-title reveal">Beyond The Role</h2>
+        <div class="beyond-grid" id="teamGrid">
+            <div class="data-status">Loading team…</div>
         </div>
+    </section>
 
-        <div class="contact-form-card reveal">
-            <div class="form-card-top">
-                <span>PROJECT INQUIRY</span>
-                <div class="status-dot">
-                    <i></i> Available
-                </div>
-            </div>
+    <section id="contact">
+        <div class="contact-wrapper">
 
-            <form id="contactForm">
+            <div class="contact-intro reveal">
+                <span class="contact-eyebrow">GET IN TOUCH</span>
 
-                <div class="form-row">
-                    <div class="modern-field">
-                        <input type="text" id="name" name="Name" required placeholder=" ">
-                        <label for="name">Your Name</label>
-                    </div>
+                <h2>
+                    Let’s build something
+                    <span>remarkable.</span>
+                </h2>
 
-                    <div class="modern-field">
-                        <input type="email" id="email" name="Email" required placeholder=" ">
-                        <label for="email">Email Address</label>
-                    </div>
-                </div>
-
-                <div class="modern-field">
-                    <textarea id="message" name="Message" rows="5" required placeholder=" "></textarea>
-                    <label for="message">Tell us about your project</label>
-                </div>
-
-                <button type="submit" class="modern-submit">
-                    <span>Send Inquiry</span>
-                    <span class="submit-arrow">↗</span>
-                </button>
-
-                <p class="form-note">
-                    By sending this message, you agree to be contacted regarding your inquiry.
+                <p>
+                    Have a project in mind? Tell us what you're looking to
+                    build,
+                    and our team will get back to you.
                 </p>
-            </form>
-        </div>
 
-    </div>
-</section>
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">✉</div>
+                        <div>
+                            <small>Email us</small>
+                            <strong>info@ssaprojects.com</strong>
+                        </div>
+                    </div>
 
-<button class="back-to-top" id="backToTop">&#8593;</button>
-
-<footer><p>&copy; 2026 SSA PROJECTS PVT. LTD. All rights reserved.</p></footer>
-
-<script>
-/* ==========================================================
-   SSA PROJECTS - GITHUB DATA CONFIGURATION
-   ==========================================================
-   Put projects.json and team.json in your SSA-ADMIN repo.
-   Replace these two URLs with your actual raw GitHub URLs.
-*/
-const DATA_CONFIG = {
-    projectsUrl: "https://miles-morales-rgb.github.io/Ssa-projects-admin/projects.json",
-    teamUrl: "https://miles-morales-rgb.github.io/Ssa-projects-admin/team.json"
-};
-
-// If JSON is in the SAME repository as this website, use:
-// projectsUrl: "projects.json",
-// teamUrl: "team.json"
-
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
-
-menuToggle.addEventListener("click", () => navMenu.classList.toggle("active"));
-document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => navMenu.classList.remove("active"));
-});
-
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
-
-function revealOnScroll() {
-    const h = window.innerHeight;
-    document.querySelectorAll(".reveal").forEach(el => {
-        if (el.getBoundingClientRect().top < h - 80) el.classList.add("active");
-    });
-}
-
-function updateScrollSpy() {
-    let current = "";
-    sections.forEach(section => {
-        const top = section.offsetTop - 120;
-        if (window.pageYOffset >= top &&
-            window.pageYOffset < top + section.clientHeight) {
-            current = section.id;
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.toggle("active", link.getAttribute("href") === "#" + current);
-    });
-
-    revealOnScroll();
-    toggleBackToTop();
-}
-
-window.addEventListener("scroll", updateScrollSpy, { passive:true });
-
-function escapeHTML(value) {
-    return String(value ?? "")
-        .replace(/&/g,"&amp;")
-        .replace(/</g,"&lt;")
-        .replace(/>/g,"&gt;")
-        .replace(/"/g,"&quot;")
-        .replace(/'/g,"&#039;");
-}
-
-function imageURL(value) {
-    return value || "logo.jpeg";
-}
-
-const worksGrid = document.getElementById("worksGrid");
-const teamGrid = document.getElementById("teamGrid");
-let projectCards = [];
-
-function renderProjects(projects) {
-    if (!Array.isArray(projects) || !projects.length) {
-        worksGrid.innerHTML = '<div class="data-status">No projects available.</div>';
-        return;
-    }
-
-    projects = [...projects].sort(
-        (a,b) => Number(a.displayOrder ?? 9999) - Number(b.displayOrder ?? 9999)
-    );
-
-    worksGrid.innerHTML = "";
-    projectCards = [];
-
-    projects.forEach(project => {
-        const card = document.createElement("div");
-        card.className = "work-card reveal";
-
-        card.dataset.category = String(project.category || "").toLowerCase();
-        card.dataset.title = project.title || "";
-        card.dataset.location = project.location || "";
-        card.dataset.img = imageURL(project.imageUrl);
-        card.dataset.detail = project.description || project.shortDescription || "";
-
-        card.innerHTML = `
-            <div class="work-img">
-                <img src="${escapeHTML(imageURL(project.imageUrl))}"
-                     alt="${escapeHTML(project.title || "Project")}"
-                     loading="lazy"
-                     decoding="async">
+                    <div class="contact-detail">
+                        <div class="contact-detail-icon">↗</div>
+                        <div>
+                            <small>Business inquiries</small>
+                            <strong>Let's discuss your project</strong>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="contact-form-card reveal">
+                <div class="form-card-top">
+                    <span>PROJECT INQUIRY</span>
+                    <div class="status-dot">
+                        <i></i> Available
+                    </div>
+                </div>
+
+                <form action="mailto:info@ssaprojects.com" method="post" enctype="text/plain" id="contactForm">
+
+                    <div class="form-row">
+                        <div class="modern-field">
+                            <input type="text" id="name" name="Name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="modern-field">
+                            <input type="email" id="email" name="Email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+
+                    <div class="modern-field">
+                        <textarea id="message" name="Message" rows="5" required placeholder=" "></textarea>
+                        <label for="message">Tell us about your
+                            project</label>
+                    </div>
+
+                    <button type="submit" class="modern-submit">
+                        <span>Send Inquiry</span>
+                        <span class="submit-arrow">↗</span>
+                    </button>
+
+                    <p class="form-note">
+                        By sending this message, you agree to be contacted
+                        regarding your inquiry.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+    <footer>
+        <p>&copy; 2026 SSA PROJECTS PVT. LTD. All rights
+            reserved.</p>
+    </footer>
+
+    <script>
+        const DATA_CONFIG = {
+            projectsUrl: "https://miles-morales-rgb.github.io/Ssa-projects-admin/projects.json",
+            teamUrl: "https://miles-morales-rgb.github.io/Ssa-projects-admin/team.json"
+        };
+
+        const ADMIN_BASE_URL = "https://miles-morales-rgb.github.io/Ssa-projects-admin/";
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        menuToggle.addEventListener("click", () => navMenu.classList.toggle("active"));
+
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => navMenu.classList.remove("active"));
+        });
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        function revealOnScroll() {
+            const h = window.innerHeight;
+            document.querySelectorAll(".reveal").forEach(el => {
+                if (el.getBoundingClientRect().top < h - 80) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        function updateScrollSpy() {
+            let current = "";
+
+            sections.forEach(section => {
+                const top = section.offsetTop - 120;
+
+                if (
+                    window.pageYOffset >= top &&
+                    window.pageYOffset < top + section.clientHeight
+                ) {
+                    current = section.id;
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.toggle(
+                    "active",
+                    link.getAttribute("href") === "#" + current
+                );
+            });
+
+            revealOnScroll();
+            toggleBackToTop();
+        }
+
+        window.addEventListener("scroll", updateScrollSpy, { passive: true });
+
+        function escapeHTML(value) {
+            return String(value ?? "")
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        function imageURL(value) {
+            if (!value) {
+                return "logo.jpeg";
+            }
+
+            if (/^https?:\/\//i.test(value)) {
+                return value;
+            }
+
+            return ADMIN_BASE_URL + String(value).replace(/^\/+/, "");
+        }
+
+        const worksGrid = document.getElementById("worksGrid");
+        const teamGrid = document.getElementById("teamGrid");
+        let projectCards = [];
+
+        function renderProjects(projects) {
+            if (!Array.isArray(projects) || !projects.length) {
+                worksGrid.innerHTML = '<div class="data-status">No projects available.</div>';
+                return;
+            }
+
+            projects = [...projects].sort(
+                (a, b) => Number(a.displayOrder ?? 9999) - Number(b.displayOrder ?? 9999)
+            );
+
+            worksGrid.innerHTML = "";
+            projectCards = [];
+
+            projects.forEach(project => {
+                const card = document.createElement("div");
+                card.className = "work-card reveal";
+                card.dataset.category = String(project.category || "").toLowerCase();
+                card.dataset.title = project.title || "";
+                card.dataset.location = project.location || "";
+
+                const projectImage = imageURL(project.imageUrl);
+                card.dataset.img = projectImage;
+                card.dataset.detail = project.description || project.shortDescription || "";
+
+                card.innerHTML = `
+            <div class="work-img">
+                <img
+                    src="${escapeHTML(projectImage)}"
+                    alt="${escapeHTML(project.title || "Project")}"
+                    loading="lazy"
+                    decoding="async">
+            </div>
+
             <div class="work-info">
                 <span class="location">${escapeHTML(project.location || "")}</span>
                 <h3>${escapeHTML(project.title || "Untitled Project")}</h3>
@@ -1848,275 +1835,268 @@ function renderProjects(projects) {
             </div>
         `;
 
-        const img = card.querySelector("img");
-        img.addEventListener("load", () => img.classList.add("loaded"));
-        img.addEventListener("error", () => {
-            img.src = "logo.jpeg";
-            img.classList.add("loaded");
+                const img = card.querySelector("img");
+
+                img.addEventListener("load", () => img.classList.add("loaded"));
+
+                img.addEventListener("error", () => {
+                    if (!img.dataset.fallback) {
+                        img.dataset.fallback = "true";
+                        img.src = "logo.jpeg";
+                        img.classList.add("loaded");
+                    }
+                });
+
+                card.addEventListener("click", () => {
+                    openModal(
+                        card.dataset.title,
+                        card.dataset.location,
+                        card.dataset.img,
+                        card.dataset.detail
+                    );
+                });
+
+                worksGrid.appendChild(card);
+                projectCards.push(card);
+            });
+
+            applyProjectFilter("all");
+            revealOnScroll();
+        }
+
+        function applyProjectFilter(filter) {
+            projectCards.forEach(card => {
+                card.style.display =
+                    filter === "all" || card.dataset.category === filter
+                        ? "block"
+                        : "none";
+            });
+
+            revealOnScroll();
+        }
+
+        document.querySelectorAll(".filter-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                applyProjectFilter(btn.dataset.filter);
+            });
         });
 
-        card.addEventListener("click", () => openModal(
-            card.dataset.title,
-            card.dataset.location,
-            card.dataset.img,
-            card.dataset.detail
-        ));
+        function renderTeam(team) {
+            if (!Array.isArray(team) || !team.length) {
+                teamGrid.innerHTML = '<div class="data-status">No team members available.</div>';
+                return;
+            }
 
-        worksGrid.appendChild(card);
-        projectCards.push(card);
-    });
+            team = [...team].sort(
+                (a, b) => Number(a.displayOrder ?? 9999) - Number(b.displayOrder ?? 9999)
+            );
 
-    applyProjectFilter("all");
-    revealOnScroll();
-}
+            teamGrid.innerHTML = "";
 
-function applyProjectFilter(filter) {
-    projectCards.forEach(card => {
-        card.style.display =
-            filter === "all" || card.dataset.category === filter
-            ? "block"
-            : "none";
-    });
-    revealOnScroll();
-}
+            team.forEach(member => {
+                const card = document.createElement("div");
+                card.className = "beyond-card-container reveal";
 
-document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        applyProjectFilter(btn.dataset.filter);
-    });
-});
+                const memberImage = imageURL(member.imageUrl);
 
-function renderTeam(team) {
-    if (!Array.isArray(team) || !team.length) {
-        teamGrid.innerHTML = '<div class="data-status">No team members available.</div>';
-        return;
-    }
-
-    team = [...team].sort(
-        (a,b) => Number(a.displayOrder ?? 9999) - Number(b.displayOrder ?? 9999)
-    );
-
-    teamGrid.innerHTML = "";
-
-    team.forEach(member => {
-        const card = document.createElement("div");
-        card.className = "beyond-card-container reveal";
-
-        card.innerHTML = `
+                card.innerHTML = `
             <div class="beyond-card">
+
                 <div class="beyond-card-front">
                     <div class="beyond-avatar">
-                        <img src="${escapeHTML(imageURL(member.imageUrl))}"
-                             alt="${escapeHTML(member.name || "Team Member")}"
-                             loading="lazy" decoding="async">
+                        <img
+                            src="${escapeHTML(memberImage)}"
+                            alt="${escapeHTML(member.name || "Team Member")}"
+                            loading="lazy"
+                            decoding="async">
                     </div>
+
                     <h3>${escapeHTML(member.name || "Team Member")}</h3>
-                    <span class="role-title">${escapeHTML(member.role || "")}</span>
-                    <div class="flip-hint">Hover / Touch to Flip 🔄</div>
+
+                    <span class="role-title">
+                        ${escapeHTML(member.role || "")}
+                    </span>
+
+                    <div class="flip-hint">
+                        Hover / Touch to Flip 🔄
+                    </div>
                 </div>
+
                 <div class="beyond-card-back">
                     <span class="quote-icon">“</span>
-                    <blockquote>${escapeHTML(member.quote || member.description || "")}</blockquote>
-                    <button class="modal-trigger-btn" type="button">View Details</button>
+
+                    <blockquote>
+                        ${escapeHTML(
+                    member.quote ||
+                    member.description ||
+                    ""
+                )}
+                    </blockquote>
+
+                    <button class="modal-trigger-btn" type="button">
+                        View Details
+                    </button>
                 </div>
+
             </div>
         `;
 
-        const img = card.querySelector("img");
-        img.addEventListener("error", () => img.src = "logo.jpeg");
+                const img = card.querySelector("img");
 
-        card.querySelector(".modal-trigger-btn").addEventListener("click", event => {
-            event.stopPropagation();
-            openModal(
-                `${member.name || "Team Member"} — Beyond The Role`,
-                member.role || "",
-                imageURL(member.imageUrl),
-                member.description || member.quote || ""
-            );
-        });
+                img.addEventListener("error", () => {
+                    if (!img.dataset.fallback) {
+                        img.dataset.fallback = "true";
+                        img.src = "logo.jpeg";
+                    }
+                });
 
-        teamGrid.appendChild(card);
-    });
+                card.querySelector(".modal-trigger-btn").addEventListener("click", event => {
+                    event.stopPropagation();
 
-    revealOnScroll();
-}
+                    openModal(
+                        `${member.name || "Team Member"} — Beyond The Role`,
+                        member.role || "",
+                        memberImage,
+                        member.quote || member.description || ""
+                    );
+                });
 
-const projectModal = document.getElementById("projectModal");
-const modalImg = document.getElementById("modalImg");
-const modalLocation = document.getElementById("modalLocation");
-const modalTitle = document.getElementById("modalTitle");
-const modalDescription = document.getElementById("modalDescription");
-const modalImageReveal = document.getElementById("modalImageReveal");
+                teamGrid.appendChild(card);
+            });
 
-function openModal(title, location, img, detail) {
-    modalTitle.textContent = title || "";
-    modalLocation.textContent = location || "";
-    modalImg.src = img || "logo.jpeg";
-    modalDescription.textContent = detail || "";
-
-    // Always open with the image visible first.
-    modalImageReveal.classList.remove("revealed");
-    projectModal.classList.add("active");
-}
-
-// Clicking the image toggles the detail "letter".
-modalImageReveal.addEventListener("click", () => {
-    modalImageReveal.classList.toggle("revealed");
-});
-
-function closeModal() {
-    projectModal.classList.remove("active");
-    modalImageReveal.classList.remove("revealed");
-}
-
-document.getElementById("modalClose").addEventListener("click", closeModal);
-document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
-projectModal.addEventListener("click", e => {
-    if (e.target === projectModal) closeModal();
-});
-
-const backToTopBtn = document.getElementById("backToTop");
-
-function toggleBackToTop() {
-    backToTopBtn.classList.toggle("show", window.pageYOffset > 400);
-}
-
-backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({top:0, behavior:"smooth"});
-});
-
-async function fetchJSON(url) {
-    const response = await fetch(url, { cache:"no-cache" });
-    if (!response.ok) throw new Error("HTTP " + response.status + " for " + url);
-    return response.json();
-}
-
-async function loadRemoteData() {
-    try {
-        // Both files download at the same time.
-        const [projects, team] = await Promise.all([
-            fetchJSON(DATA_CONFIG.projectsUrl),
-            fetchJSON(DATA_CONFIG.teamUrl)
-        ]);
-
-        renderProjects(projects);
-        renderTeam(team);
-    } catch (error) {
-        console.error("SSA Projects data loading error:", error);
-        worksGrid.innerHTML =
-            '<div class="data-status error">Projects could not be loaded right now.</div>';
-        teamGrid.innerHTML =
-            '<div class="data-status error">Team information could not be loaded right now.</div>';
-    }
-}
-
-function startBackgroundLoading() {
-    const run = window.requestIdleCallback || (callback => setTimeout(callback, 50));
-
-    run(() => {
-        // JSON loads after the first page render.
-        loadRemoteData();
-
-        // Heavy hero video also starts after the initial page render.
-        const video = document.getElementById("heroVideo");
-        const source = video.querySelector("source");
-
-        if (source?.dataset.src) {
-            source.src = source.dataset.src;
-            video.load();
-            video.play().catch(() => {});
+            revealOnScroll();
         }
-    });
-}
 
-window.addEventListener("DOMContentLoaded", () => {
-    revealOnScroll();
-    updateScrollSpy();
+        const projectModal = document.getElementById("projectModal");
+        const modalImg = document.getElementById("modalImg");
+        const modalLocation = document.getElementById("modalLocation");
+        const modalTitle = document.getElementById("modalTitle");
+        const modalDescription = document.getElementById("modalDescription");
 
-    // Do not wait for GitHub JSON or video.
-    startBackgroundLoading();
-});
+        function openModal(title, location, img, detail) {
+            modalTitle.textContent = title || "";
+            modalLocation.textContent = location || "";
+            modalImg.src = img || "logo.jpeg";
+            modalImg.dataset.fallback = "";
+            modalDescription.textContent = detail || "";
 
-/* =========================================================
-   SSA PREMIUM MOTION UI — lightweight interaction layer
-   ========================================================= */
-(function () {
-    const progress = document.getElementById("premiumProgress");
+            projectModal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
 
-    function updatePremiumProgress() {
-        if (!progress) return;
-        const max = document.documentElement.scrollHeight - window.innerHeight;
-        const value = max > 0 ? (window.scrollY / max) * 100 : 0;
-        progress.style.width = value + "%";
-    }
+        function closeModal() {
+            projectModal.classList.remove("active");
+            document.body.style.overflow = "";
+        }
 
-    window.addEventListener("scroll", updatePremiumProgress, { passive: true });
-    window.addEventListener("resize", updatePremiumProgress);
-    updatePremiumProgress();
+        document.getElementById("modalClose").addEventListener("click", closeModal);
+        document.getElementById("modalCloseBtn").addEventListener("click", closeModal);
 
-    // Gives cards a subtle light-follow effect; no external library required.
-    document.addEventListener("pointermove", function (event) {
-        const card = event.target.closest(".work-card, .highlight-card, .beyond-card");
-        if (!card) return;
-
-        const rect = card.getBoundingClientRect();
-        card.style.setProperty("--mx", ((event.clientX - rect.left) / rect.width * 100) + "%");
-        card.style.setProperty("--my", ((event.clientY - rect.top) / rect.height * 100) + "%");
-    }, { passive: true });
-
-    // Slight stagger for visible reveal elements.
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            const el = entry.target;
-            const parent = el.parentElement;
-            if (parent) {
-                const siblings = [...parent.querySelectorAll(":scope > .reveal")];
-                const index = siblings.indexOf(el);
-                if (index >= 0) {
-                    el.style.transitionDelay = Math.min(index * 70, 350) + "ms";
-                }
-            }
-            revealObserver.unobserve(el);
+        projectModal.addEventListener("click", e => {
+            if (e.target === projectModal) closeModal();
         });
-    }, { threshold: 0.12 });
 
-    document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
-})();
+        document.addEventListener("keydown", event => {
+            if (
+                event.key === "Escape" &&
+                projectModal.classList.contains("active")
+            ) {
+                closeModal();
+            }
+        });
 
-</script>
+        modalImg.addEventListener("error", () => {
+            if (!modalImg.dataset.fallback) {
+                modalImg.dataset.fallback = "true";
+                modalImg.src = "logo.jpeg";
+            }
+        });
 
-<script>
-(function(){
-    const form = document.getElementById("contactForm");
-    if (!form) return;
+        const backToTopBtn = document.getElementById("backToTop");
 
-    form.addEventListener("submit", function(e){
-        e.preventDefault();
+        function toggleBackToTop() {
+            backToTopBtn.classList.toggle(
+                "show",
+                window.pageYOffset > 400
+            );
+        }
 
-        const name = document.getElementById("name")?.value.trim() || "";
-        const email = document.getElementById("email")?.value.trim() || "";
-        const message = document.getElementById("message")?.value.trim() || "";
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
 
-        const subject = "Website Project Inquiry - " + (name || "New Inquiry");
-        const body =
-            "Hello SSA Projects,\n\n" +
-            "Name: " + name + "\n" +
-            "Email: " + email + "\n\n" +
-            "Project Details:\n" + message + "\n\n" +
-            "Sent from the SSA Projects website.";
+        async function fetchJSON(url) {
+            const response = await fetch(url, {
+                cache: "no-cache"
+            });
 
-        const gmailUrl =
-            "https://mail.google.com/mail/?view=cm&fs=1&tf=1" +
-            "&to=" + encodeURIComponent("info@ssaprojects.com") +
-            "&su=" + encodeURIComponent(subject) +
-            "&body=" + encodeURIComponent(body);
+            if (!response.ok) {
+                throw new Error(
+                    "HTTP " + response.status + " for " + url
+                );
+            }
 
-        window.open(gmailUrl, "_blank", "noopener,noreferrer");
-    });
-})();
-</script>
+            return response.json();
+        }
+
+        async function loadRemoteData() {
+            try {
+                const [projects, team] = await Promise.all([
+                    fetchJSON(DATA_CONFIG.projectsUrl),
+                    fetchJSON(DATA_CONFIG.teamUrl)
+                ]);
+
+                renderProjects(projects);
+                renderTeam(team);
+
+            } catch (error) {
+                console.error(
+                    "SSA Projects data loading error:",
+                    error
+                );
+
+                worksGrid.innerHTML =
+                    '<div class="data-status error">' +
+                    'Projects could not be loaded right now.' +
+                    '</div>';
+
+                teamGrid.innerHTML =
+                    '<div class="data-status error">' +
+                    'Team information could not be loaded right now.' +
+                    '</div>';
+            }
+        }
+
+        function startBackgroundLoading() {
+            const run =
+                window.requestIdleCallback ||
+                (callback => setTimeout(callback, 50));
+
+            run(() => {
+                loadRemoteData();
+
+                const video = document.getElementById("heroVideo");
+                const source = video.querySelector("source");
+
+                if (source && source.dataset.src) {
+                    source.src = source.dataset.src;
+                    video.load();
+                    video.play().catch(() => { });
+                }
+            });
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+            revealOnScroll();
+            updateScrollSpy();
+            startBackgroundLoading();
+        });
+    </script>
 </body>
+
 </html>
