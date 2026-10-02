@@ -66,16 +66,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <style>
          :root {
-             --primary-bg: #0b0f17;
-             --surface-bg: #131b27;
-             --surface-card: #1a2433;
-             --accent-gold: #d4af37;
-             --accent-gold-hover: #b89528;
-             --text-main: #f1f5f9;
-             --text-muted: #94a3b8;
-             --border-color: rgba(255, 255, 255, .08);
+             --primary-bg: #08131f;
+             --surface-bg: #102333;
+             --surface-card: #183247;
+             --accent-gold: #e2bd68;
+             --accent-gold-hover: #c99d43;
+             --text-main: #f7f3ea;
+             --text-muted: #a9bac8;
+             --border-color: rgba(180, 210, 220, .12);
              --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, .5);
-             --glow-shadow: 0 0 20px rgba(212, 175, 55, .15)
+             --glow-shadow: 0 0 24px rgba(226, 189, 104, .16)
+         }
+
+
+         /* Layered corporate palette: midnight navy + slate + champagne gold + muted teal */
+         .nav-link:hover, .nav-link.active {
+             color: var(--accent-gold);
+         }
+         .process-card:nth-child(2) .process-number,
+         .process-card:nth-child(4) .process-number {
+             color: #79b7b0;
+         }
+         .process-card:nth-child(2)::before,
+         .process-card:nth-child(4)::before {
+             background: linear-gradient(90deg, #79b7b0, var(--accent-gold));
+         }
+         .section-label::before {
+             background: linear-gradient(90deg, var(--accent-gold), #79b7b0);
          }
 
          * {
@@ -101,7 +118,7 @@
              top: 0;
              left: 0;
              width: 100%;
-             background: rgba(11, 15, 23, .85);
+             background: rgba(8, 19, 31, .88);
              backdrop-filter: blur(12px);
              -webkit-backdrop-filter: blur(12px);
              display: flex;
@@ -166,8 +183,8 @@
          nav a:hover,
          nav a.active {
              color: var(--accent-gold);
-             background: rgba(212, 175, 55, .08);
-             border-color: rgba(212, 175, 55, .2)
+             background: rgba(226, 189, 104, .09);
+             border-color: rgba(226, 189, 104, .22)
          }
 
          .mobile-menu-btn {
@@ -235,21 +252,19 @@
 
          .hero-video {
              position: absolute;
-             top: 50%;
-             left: 50%;
              min-width: 100%;
              min-height: 100%;
              width: auto;
              height: auto;
              z-index: -2;
              transform: translate(-50%, -50%);
-             object-fit: cover
+             object-fit: cover;
          }
 
          .hero-overlay {
              position: absolute;
              inset: 0;
-             background: linear-gradient(180deg, rgba(11, 15, 23, .6) 0%, rgba(11, 15, 23, .95) 100%);
+             background: linear-gradient(180deg, rgba(8, 19, 31, .62) 0%, rgba(8, 19, 31, .96) 100%);
              z-index: -1
          }
 
@@ -273,7 +288,7 @@
          }
 
          .btn {
-             background: linear-gradient(135deg, var(--accent-gold), #a88442);
+             background: linear-gradient(135deg, var(--accent-gold), #b88746);
              color: #000;
              padding: 14px 32px;
              border: none;
@@ -289,7 +304,7 @@
 
          .btn:hover {
              transform: translateY(-3px);
-             box-shadow: 0 10px 25px rgba(212, 175, 55, .3)
+             box-shadow: 0 10px 25px rgba(226, 189, 104, .32)
          }
 
          .stats-banner {
@@ -335,7 +350,7 @@
          }
 
          .highlight-card:hover {
-             border-color: rgba(212, 175, 55, .3);
+             border-color: rgba(226, 189, 104, .32);
              transform: translateY(-5px)
          }
 
@@ -377,8 +392,8 @@
 
          .filter-btn.active,
          .filter-btn:hover {
-             background: var(--accent-gold);
-             color: #000;
+             background: linear-gradient(135deg, var(--accent-gold), #b88746);
+             color: #07111a;
              border-color: var(--accent-gold);
              box-shadow: var(--glow-shadow)
          }
@@ -400,7 +415,7 @@
 
          .work-card:hover {
              transform: translateY(-8px);
-             border-color: rgba(212, 175, 55, .3);
+             border-color: rgba(226, 189, 104, .32);
              box-shadow: var(--card-shadow)
          }
 
@@ -1021,8 +1036,8 @@
              width: 45px;
              height: 45px;
              border-radius: 50%;
-             background: var(--accent-gold);
-             color: #000;
+             background: linear-gradient(135deg, var(--accent-gold), #b88746);
+             color: #07111a;
              border: none;
              cursor: pointer;
              display: none;
@@ -1058,6 +1073,167 @@
          .data-status.error {
              color: #fca5a5
          }
+
+         .contact-email-row {
+             display: flex;
+             align-items: center;
+             gap: 10px;
+             margin-top: 8px;
+             flex-wrap: wrap;
+         }
+
+         .copy-email-btn {
+             border: 1px solid rgba(212, 175, 55, .28);
+             background: rgba(212, 175, 55, .07);
+             color: var(--accent-gold);
+             padding: 7px 11px;
+             border-radius: 9px;
+             cursor: pointer;
+             font-size: .72rem;
+             font-weight: 700;
+             transition: all .25s ease;
+         }
+
+         .copy-email-btn:hover {
+             background: linear-gradient(135deg, var(--accent-gold), #b88746);
+             color: #07111a;
+             transform: translateY(-1px);
+         }
+
+         .copy-email-btn.copied {
+             background: rgba(76, 175, 80, .14);
+             border-color: rgba(76, 175, 80, .35);
+             color: #8ee99a;
+         }
+
+         .contact-address {
+             margin-top: 16px;
+             color: var(--text-muted);
+             font-size: .78rem;
+             line-height: 1.6;
+         }
+
+         .contact-address strong {
+             color: var(--text-main);
+             font-weight: 600;
+         }
+
+         .form-helper {
+             margin: -8px 0 20px;
+             color: var(--text-muted);
+             font-size: .74rem;
+         }
+
+         .form-success {
+             display: none;
+             margin-top: 14px;
+             padding: 11px 13px;
+             border: 1px solid rgba(76, 175, 80, .25);
+             background: rgba(76, 175, 80, .08);
+             border-radius: 10px;
+             color: #9be6a3;
+             font-size: .78rem;
+             line-height: 1.5;
+         }
+
+         .form-success.show { display: block; }
+
+         .office-strip {
+             display: grid;
+             grid-template-columns: 1fr auto;
+             gap: 24px;
+             align-items: center;
+             max-width: 1180px;
+             margin: 0 auto 35px;
+             padding: 18px 20px;
+             border: 1px solid var(--border-color);
+             border-radius: 16px;
+             background: rgba(255,255,255,.025);
+         }
+
+         .office-strip small {
+             display: block;
+             color: var(--accent-gold);
+             font-size: .68rem;
+             font-weight: 800;
+             letter-spacing: .15em;
+             margin-bottom: 5px;
+         }
+
+         .office-strip strong {
+             color: var(--text-main);
+             font-size: .9rem;
+         }
+
+         .office-strip a {
+             color: var(--accent-gold);
+             text-decoration: none;
+             font-size: .8rem;
+             font-weight: 700;
+         }
+
+         .office-strip a:hover { text-decoration: underline; }
+
+         .process-section {
+             padding: 90px 8%;
+             background: var(--surface-bg);
+             border-top: 1px solid var(--border-color);
+             border-bottom: 1px solid var(--border-color);
+         }
+
+         .process-grid {
+             max-width: 1180px;
+             margin: 0 auto;
+             display: grid;
+             grid-template-columns: repeat(4, 1fr);
+             gap: 18px;
+         }
+
+         .process-card {
+             position: relative;
+             padding: 25px;
+             border: 1px solid var(--border-color);
+             border-radius: 16px;
+             background: rgba(255,255,255,.025);
+             transition: transform .3s ease, border-color .3s ease;
+         }
+
+         .process-card:hover {
+             transform: translateY(-5px);
+             border-color: rgba(212,175,55,.3);
+         }
+
+         .process-number {
+             color: var(--accent-gold);
+             font-size: .72rem;
+             font-weight: 800;
+             letter-spacing: .15em;
+         }
+
+         .process-card h3 {
+             margin: 22px 0 8px;
+             color: var(--text-main);
+             font-size: 1.05rem;
+         }
+
+         .process-card p {
+             color: var(--text-muted);
+             font-size: .82rem;
+             line-height: 1.65;
+         }
+
+         .contact-cta {
+             display: inline-flex;
+             align-items: center;
+             gap: 9px;
+             margin-top: 18px;
+             color: var(--accent-gold);
+             text-decoration: none;
+             font-size: .82rem;
+             font-weight: 700;
+         }
+
+         .contact-cta:hover { color: var(--text-main); }
 
          @media(max-width:768px) {
              header {
@@ -1536,6 +1712,15 @@
                  right: 25px;
              }
 
+             .office-strip {
+                 grid-template-columns: 1fr;
+                 gap: 10px;
+             }
+
+             .process-grid {
+                 grid-template-columns: 1fr;
+             }
+
              .form-row {
                  grid-template-columns: 1fr;
                  gap: 0;
@@ -1558,8 +1743,8 @@
              <ul>
                  <li><a href="#home" class="nav-link active">Home</a></li>
                  <li><a href="#works" class="nav-link">Projects</a></li>
-                 <li><a href="#beyond-role" class="nav-link">Beyond The
-                         Role</a></li>
+                 <li><a href="#process" class="nav-link">Approach</a></li>
+                 <li><a href="#beyond-role" class="nav-link">Team</a></li>
                  <li><a href="#contact" class="nav-link">Contact</a></li>
              </ul>
          </nav>
@@ -1653,6 +1838,32 @@
          </div>
      </div>
 
+     <section id="process" class="process-section">
+         <h2 class="section-title reveal">From Vision to Delivery</h2>
+         <div class="process-grid">
+             <div class="process-card reveal">
+                 <span class="process-number">01 / DISCOVER</span>
+                 <h3>Understand</h3>
+                 <p>Define the project goals, requirements, scope, and the outcome the client wants to achieve.</p>
+             </div>
+             <div class="process-card reveal">
+                 <span class="process-number">02 / PLAN</span>
+                 <h3>Plan &amp; Coordinate</h3>
+                 <p>Bring the right planning, engineering, design, and project-management requirements together.</p>
+             </div>
+             <div class="process-card reveal">
+                 <span class="process-number">03 / EXECUTE</span>
+                 <h3>Build</h3>
+                 <p>Coordinate execution with attention to quality, site requirements, timelines, and project priorities.</p>
+             </div>
+             <div class="process-card reveal">
+                 <span class="process-number">04 / DELIVER</span>
+                 <h3>Complete</h3>
+                 <p>Bring the project through completion with clear communication and a focus on the intended result.</p>
+             </div>
+         </div>
+     </section>
+
      <section id="beyond-role">
          <h2 class="section-title reveal">Beyond The Role</h2>
          <div class="beyond-grid" id="teamGrid">
@@ -1661,6 +1872,13 @@
      </section>
 
      <section id="contact">
+         <div class="office-strip reveal">
+             <div>
+                 <small>SSA PROJECTS — NOIDA OFFICE</small>
+                 <strong>M-5, Sector 66, Noida, Uttar Pradesh</strong>
+             </div>
+             <a href="https://www.google.com/maps/place/SSA+PROJECTS+PVT+LTD/@28.6016292,77.3745504,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce57d7364b5b3:0xe078ad4358b69890!8m2!3d28.6016245!4d77.3771253!16s%2Fg%2F11hbvvzvq5?entry=ttu&amp;g_ep=EgoyMDI2MDkyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Open in Maps ↗</a>
+         </div>
          <div class="contact-wrapper">
 
              <div class="contact-intro reveal">
@@ -1682,18 +1900,22 @@
                          <div class="contact-detail-icon">✉</div>
                          <div>
                              <small>Email us</small>
-                             <strong>info@ssaprojects.com</strong>
+                             <div class="contact-email-row">
+                                 <strong id="companyEmail">info@ssaprojects.com</strong>
+                                 <button type="button" class="copy-email-btn" id="copyEmailBtn" aria-label="Copy organization email">Copy</button>
+                             </div>
                          </div>
                      </div>
 
                      <div class="contact-detail">
-                         <div class="contact-detail-icon">↗</div>
+                         <div class="contact-detail-icon">⌖</div>
                          <div>
-                             <small>Business inquiries</small>
-                             <strong>Let's discuss your project</strong>
+                             <small>Office</small>
+                             <strong>M-5, Sector 66, Noida, Uttar Pradesh</strong>
                          </div>
                      </div>
                  </div>
+                 <a class="contact-cta" href="mailto:info@ssaprojects.com">Email the team <span>↗</span></a>
              </div>
 
              <div class="contact-form-card reveal">
@@ -1704,7 +1926,9 @@
                      </div>
                  </div>
 
-                 <form action="mailto:info@ssaprojects.com" method="post" enctype="text/plain" id="contactForm">
+                 <form id="contactForm">
+
+                     <p class="form-helper">Your message will open in your email app, addressed to the SSA Projects team.</p>
 
                      <div class="form-row">
                          <div class="modern-field">
@@ -1725,14 +1949,10 @@
                      </div>
 
                      <button type="submit" class="modern-submit">
-                         <span>Send Inquiry</span>
+                         <span>Prepare Inquiry Email</span>
                          <span class="submit-arrow">↗</span>
                      </button>
-
-                     <p class="form-note">
-                         By sending this message, you agree to be contacted
-                         regarding your inquiry.
-                     </p>
+                     <div class="form-success" id="formSuccess" role="status"></div>
                  </form>
              </div>
 
@@ -2045,6 +2265,74 @@
                  modalImg.dataset.fallback = "true";
                  modalImg.src = "logo.jpeg";
              }
+         });
+
+         const copyEmailBtn = document.getElementById("copyEmailBtn");
+         const companyEmail = document.getElementById("companyEmail");
+
+         if (copyEmailBtn && companyEmail) {
+             copyEmailBtn.addEventListener("click", async () => {
+                 const email = companyEmail.textContent.trim();
+                 try {
+                     await navigator.clipboard.writeText(email);
+                     copyEmailBtn.textContent = "Copied ✓";
+                     copyEmailBtn.classList.add("copied");
+                 } catch (error) {
+                     const temp = document.createElement("textarea");
+                     temp.value = email;
+                     document.body.appendChild(temp);
+                     temp.select();
+                     document.execCommand("copy");
+                     temp.remove();
+                     copyEmailBtn.textContent = "Copied ✓";
+                     copyEmailBtn.classList.add("copied");
+                 }
+
+                 setTimeout(() => {
+                     copyEmailBtn.textContent = "Copy";
+                     copyEmailBtn.classList.remove("copied");
+                 }, 1800);
+             });
+         }
+
+         const contactForm = document.getElementById("contactForm");
+         const formSuccess = document.getElementById("formSuccess");
+
+         const ADMIN_EMAIL = "info@ssaprojects.com";
+
+         function gmail(subject, body) {
+             const url = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=" + encodeURIComponent(ADMIN_EMAIL) + "&su=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+             window.open(url, "_blank", "noopener");
+         }
+
+         contactForm.addEventListener("submit", event => {
+             event.preventDefault();
+
+             const name = document.getElementById("name").value.trim();
+             const email = document.getElementById("email").value.trim();
+             const message = document.getElementById("message").value.trim();
+
+             if (!name || !email || !message) {
+                 formSuccess.textContent = "Please complete all fields before preparing your inquiry.";
+                 formSuccess.classList.add("show");
+                 return;
+             }
+
+             const subject = `Project Inquiry — ${name}`;
+             const body = [
+                 `Name: ${name}`,
+                 `Email: ${email}`,
+                 "",
+                 "Project details:",
+                 message,
+                 "",
+                 "Sent from the SSA Projects Pvt. Ltd. website."
+             ].join("\n");
+
+             gmail(subject, body);
+
+             formSuccess.textContent = "Gmail compose has been opened with your inquiry addressed to SSA Projects. If it does not open, use the Copy button above and email " + ADMIN_EMAIL + " directly.";
+             formSuccess.classList.add("show");
          });
 
          const backToTopBtn = document.getElementById("backToTop");
